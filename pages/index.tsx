@@ -105,7 +105,7 @@ export default function Home() {
 
             <div className='container mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-12'>
 
-              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-2 md:gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img1.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
                   <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Mapa do garimpo</div>
@@ -116,7 +116,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-2 md:gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img2.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
                   <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Artigos científicos</div>
@@ -127,7 +127,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-2 md:gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img3.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
                   <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Histórias de uso</div>
@@ -138,7 +138,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-2 md:gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img4.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
                   <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Métodos de valoração</div>

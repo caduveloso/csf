@@ -58,7 +58,7 @@ export default function Footer() {
                     </div>
 
                 </div>
-                <div className='container border text-center p-4 mt-10'>
+                <div className='container border border-gray-400 text-gray-400 text-center p-4 mt-10'>
                     <div className='text-xl font-bold'>Disclaimer</div>
                     <div className='mt-4'>
                         A CSF não se responsabiliza pelas consequências do uso da calculadora

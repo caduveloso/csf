@@ -23,9 +23,9 @@ export default function Navbar() {
 
 
 
-                <div className='gap-6 md:gap-8 justify-start md:justify-end items-end pt-8 md:pt-0 hidden md:flex'> {/*Right area*/}
+                <div className='justify-start md:justify-end items-end pt-8 md:pt-0 hidden md:flex'> {/*Right area*/}
 
-                    <ul className='flex gap-4 text-gray-400 font-thin'>
+                    <ul className='flex gap-6 text-gray-400 font-thin'>
                         <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Calculadora</Link></li>
                         <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Estudos de caso</Link></li> 
                         <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Publicações</Link></li>

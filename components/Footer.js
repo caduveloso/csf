@@ -10,7 +10,7 @@ export default function Footer() {
             <img className='w-auto md:w-1/6 mx-auto pb-16 -mt-6' src="/images/csf.png" />
             
             <div className='flex flex-col max-w-screen-lg mx-auto justify-between items-end gap-10 text-white'>
-                <div className='container grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-0 text-white'>
+                <div className='container grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-0 text-white'>
 
                     <div className='flex flex-col gap-4 grid-cols-1'>
                         <div className='text-xl font-bold'>Premiações</div>

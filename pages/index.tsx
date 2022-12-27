@@ -98,7 +98,7 @@ export default function Home() {
 
         </div>
 
-        <div className='mt-0 pt-20 pb-32 px-4 md:px-0 bg-gradient-to-r from-gray-100 to-gray-100 border-t-0 border-black'>
+        <div className='mt-0 pt-20 pb-32 px-4 md:px-0 bg-gradient-to-r from-gray-50 to-gray-50 border-t-0 border-black'>
 
           <div className='max-w-screen-lg mx-auto'>
             <div className='text-left text-3xl md:text-4xl font-bold mb-14'>Saiba mais</div>
@@ -108,7 +108,7 @@ export default function Home() {
               <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img1.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
-                  <div className='text-xl font-bold mt-2'>Mapa do garimpo</div>
+                  <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Mapa do garimpo</div>
                   <div className='mb-0'>
                     O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
                   </div>
@@ -119,7 +119,7 @@ export default function Home() {
               <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img2.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
-                  <div className='text-xl font-bold mt-2'>Artigos científicos</div>
+                  <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Artigos científicos</div>
                   <div className='mb-0'>
                     O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
                   </div>
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img3.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
-                  <div className='text-xl font-bold mt-2'>Histórias de uso</div>
+                  <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Histórias de uso</div>
                   <div className='mb-0'>
                     O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
                   </div>

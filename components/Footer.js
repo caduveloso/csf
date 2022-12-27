@@ -5,16 +5,74 @@ import { FaTwitter } from 'react-icons/fa/';
 export default function Footer() {
     return (
 
-        <div className='container-lg pt-8 pb-4 mb-0 bg-black bg-opacity-100 px-8 lg:px-0'>
-            <div className='flex max-w-screen-lg mx-auto justify-between items-end text-gray-400'>
-                <div className='text-sm text-gray-500'>
-                    &#169; Comusic 2022
+        <div className='container-lg pt-16 pb-8 mb-0 bg-black bg-opacity-100 px-8 lg:px-0'>
+            
+            <div className='flex flex-col max-w-screen-lg mx-auto justify-between items-end gap-10 text-white'>
+                <div className='container grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-0 text-white'>
+
+                    <div className='flex flex-col gap-4 grid-cols-1'>
+                        <div className='text-xl font-bold'>Premiações</div>
+                        <ul className='text-sm font-light'>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                        </ul>
+                    </div>
+
+                    <div className='flex flex-col gap-4 grid-cols-1'>
+                        <div className='text-xl font-bold'>Publicações</div>
+                        <ul className='text-sm font-light'>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                        </ul>
+                    </div>
+
+                    <div className='flex flex-col gap-4 grid-cols-1'>
+                        <div className='text-xl font-bold'>Equipe</div>
+                        <ul className='text-sm font-light'>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                        </ul>
+                    </div>
+
+                    <div className='flex flex-col gap-4 grid-cols-1'>
+                        <div className='text-xl font-bold'>Saiba mais</div>
+                        <ul className='text-sm font-light'>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                        </ul>
+                    </div>
+
+                    <div className='flex flex-col gap-4'>
+                        <div className='text-xl font-bold'>Notícias</div>
+                        <ul className='text-sm font-light'>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                            <li>lsjkhfd</li>
+                        </ul>
+                    </div>
+
                 </div>
-                <div className='flex gap-3'>   
-                    <a className='hover:text-white' href='https://discord.gg/t2DjGc8y' target='_blank' rel='noreferrer'><FaDiscord size={34}/></a>
-                    <a className='hover:text-white' href='https://twitter.com/ComusicIo' target='_blank' rel='noreferrer'><FaTwitter size={34}/> </a> 
+                <div className='container border text-center p-4 mt-10'>
+                    <div className='text-xl font-bold'>Disclaimer</div>
+                    <div className='mt-4'>
+                        A CSF não se responsabiliza pelas consequências do uso da calculadora
+                    </div>
+                </div>
+                <div className='container flex justify-between mt-10'>
+                    <div className='text-sm text-gray-500'>
+                        &#169; CSF All rights reserved
+                    </div>
+                    <div className='flex gap-3 text-gray-500'>
+                        <a className='hover:text-white' href='https://discord.gg/t2DjGc8y' target='_blank' rel='noreferrer'><FaDiscord size={24} /></a>
+                        <a className='hover:text-white' href='https://twitter.com/ComusicIo' target='_blank' rel='noreferrer'><FaTwitter size={24} /> </a>
+                    </div>
                 </div>
             </div>
+
         </div>
 
     );

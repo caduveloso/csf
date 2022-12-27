@@ -26,113 +26,133 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='-mt-10'>
+      <main className='-mt-40'>
 
-        <div className='py-8 bg-cover bg-center px-5 lg:px-0' style={{ backgroundImage: `url("/images/headerImg1.png")` }}>
-          <div className='flex max-w-screen-lg mx-auto justify-between items-center'>
-            <div className='flex flex-col w-full items-center text-white py-40 gap-10'>
-              <h1 className='text-6xl font-bold text-center mb-4'>Short sentence that explains the project</h1>
+        <div className='py-6 bg-cover bg-center px-5 lg:px-0' style={{ backgroundImage: `url("/images/headerImg1.png")` }}>
+          <div className='flex max-w-screen-lg mx-auto items-center'>
+            <div className='flex flex-col w-full items-center text-white pt-44 pb-10 md:pb-28 lg:pb-40 gap-16'>
+              <h1 className='text-5xl font-bold text-center mb-4 pt-10'>Impactos do garimpo ilegal de ouro</h1>
               <div className='flex'>
-                <Button className='bg-blue-500 py-4 px-6' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULADORA</Button>
+                <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULADORA</Button>
               </div>
             </div>
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row max-w-screen-lg mx-auto pt-20 justify-between items-start gap-10 md:gap-0'>
-          <div className='w-full md:w-1/2 px-5 lg:px-0'>
+        <div className='flex flex-col md:flex-row max-w-screen-lg mx-4 md:mx-auto pt-20 justify-between items-start gap-10 md:gap-10'>
+          <div className='w-full md:w-1/2'>
 
-            <h1 className='text-4xl font-bold mb-8'>Como utilizar a calculadora</h1>
+            <h1 className='text-4xl font-bold mb-8'>Introdução</h1>
 
-            <p className='mb-4'>Precisamos que você inclua algumas informações sobre o contexto para que a calculadora possa estimar o valor dos impactos de forma mais precisa.</p>
-            <p>Caso não tenha informações específicas, não tem problema, serão incluídos automaticamente valores médios de contexto e impacto e resultados e suas explicações serão gerados na sequencia.</p>
+            <p className='mb-4'>A calculadora de impactos é fruto de uma parceria entre CSF e MPF, uma ferramenta analítica e pedagógica que descreve os impactos do garimpo ilegal de ouro, seus valores monetários e o passo-a-passo para sua mensuração.</p>
           
           </div>
-          <div className='w-full md:w-1/2 ml-0 md:ml-10'>
-            <ReactPlayer url='https://www.youtube.com/watch?v=iRJmh62xHxU' width="496px" height="279px" />
+          <div className='w-full md:w-1/2 ml-0 md:ml-10 p-4 border shadow-md'>
+            <div className='bg-cover bg-center shadow-lg h-[250px]' style={{ backgroundImage: `url("/images/video.png")` }}></div>
           </div>
         </div>
         
 
-        <div className='mt-20 pb-20 pt-12 bg-gradient-to-r from-cyan-500 to-blue-500 border-t-0 border-black'>
+        <div className='mt-20 pt-20 pb-24 px-4 md:px-0 bg-gradient-to-r from-black to-gray-900 border-t-0 border-black'>
 
           <div className='max-w-screen-lg mx-auto'>
-          <div className='text-gray-100 text-left text-3xl md:text-4xl font-bold mb-14'>Entenda os impactos do garimpo</div>  
-            <div className='container mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-3 gap-6'>
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot1.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Contaminação por mercúrio</div>
+            <div className='text-gray-100 text-left text-3xl md:text-4xl font-bold mb-14'>Entenda os impactos do garimpo</div>
+
+            <div className='container p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-3 gap-12'>
+
+              <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  <img className='w-16 mx-auto pt-8' src="/images/deforestation.svg" />
+                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Desmatamento</div>
                 </div>
+                <div className='text-center px-6'>
+                  Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso
+                </div>
+                <div className='p-4 text-center w-full'><Button className='w-full py-2 px-4' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
               </div>
 
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot2.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Desmatamento</div>
+              <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso.
+                  <img className='w-10 mx-auto pt-8' src="/images/river.svg" />
+                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Assoreamento dos rios</div>
                 </div>
+                <div className='text-center px-6'>
+                  A abertura de cavas gera erosão e assoreamento, enquanto balsas geram sedimentação. Como consequência, há uma piora na qualidade das águas.
+                </div>
+                <div className='p-4 text-center w-full'><Button className='w-full py-2 px-4' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
               </div>
 
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot3.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Sedimentação de rios</div>
+              <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                A abertura de cavas gera erosão e assoreamento, enquanto balsas geram sedimentação. Como consequência, há uma piora na qualidade das águas.
+                  <img className='w-10 mx-auto pt-8' src="/images/contamination.svg" />
+                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Contaminação por mercurio</div>
                 </div>
+                <div className='text-center px-6'>
+                O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos
+                </div>
+                <div className='p-4 text-center w-full'><Button className='w-full py-2 px-4' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
               </div>
+              
             </div>
           </div>
 
         </div>
 
-        <div className='mt-0 pb-20 pt-12 bg-gradient-to-r from-purple-500 to-pink-500 border-t-0 border-black'>
+        <div className='mt-0 pt-20 pb-24 px-4 md:px-0 bg-gradient-to-r from-gray-100 to-gray-100 border-t-0 border-black'>
 
           <div className='max-w-screen-lg mx-auto'>
-          <div className='text-gray-100 text-left text-3xl md:text-4xl font-bold mb-14'>Entenda os impactos do garimpo</div>  
-            <div className='container mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-6'>
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot1.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Contaminação por mercúrio</div>
-                <div>
-                O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+            <div className='text-left text-3xl md:text-4xl font-bold mb-14'>Saiba mais</div>
+
+            <div className='container mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-12'>
+
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+                <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img1.png")` }}></div>
+                <div className='flex w-2/3 flex-col p-4 gap-4'>
+                  <div className='text-lg font-bold mt-2'>Mapa do garimpo</div>
+                  <div className='mb-0'>
+                    O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  </div>
+                  <div className='text-sm mb-2 text-blue-600'>continue lendo...</div>
                 </div>
               </div>
 
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot2.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Desmatamento</div>
-                <div>
-                Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso.
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+                <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img2.png")` }}></div>
+                <div className='flex w-2/3 flex-col p-4 gap-4'>
+                  <div className='text-lg font-bold mt-2'>Artigos científicos</div>
+                  <div className='mb-0'>
+                    O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  </div>
+                  <div className='text-sm mb-2 text-blue-600'>continue lendo...</div>
                 </div>
               </div>
 
-              <div className="col-span-1 flex flex-col bg-white border-0 p-6 gap-4 shadow-lg">
-                <Image className='border' src="/images/screenshot3.png" width={450} height={50} alt="App Screenshot"></Image>
-                <div className='text-lg font-bold mt-2'>Sedimentação de rios</div>
-                <div>
-                A abertura de cavas gera erosão e assoreamento, enquanto balsas geram sedimentação. Como consequência, há uma piora na qualidade das águas.
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+                <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img3.png")` }}></div>
+                <div className='flex w-2/3 flex-col p-4 gap-4'>
+                  <div className='text-lg font-bold mt-2'>Histórias de uso</div>
+                  <div className='mb-0'>
+                    O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  </div>
+                  <div className='text-sm mb-2 text-blue-600'>continue lendo...</div>
                 </div>
               </div>
+
+              <div className="col-span-1 flex bg-white rounded-lg p-0 gap-4 shadow-lg">
+                <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img4.png")` }}></div>
+                <div className='flex w-2/3 flex-col p-4 gap-4'>
+                  <div className='text-lg font-bold mt-2'>Métodos de valoração</div>
+                  <div className='mb-0'>
+                    O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  </div>
+                  <div className='text-sm mb-2 text-blue-600'>continue lendo...</div>
+                </div>
+              </div>
+
             </div>
+
           </div>
 
-        </div>
-
-        <div className='flex max-w-screen-lg mx-auto py-0 md:py-16 justify-between items-center gap-10'>
-          <div className='p-6 border border-gray-200 bg-white shadow-lg'>
-
-            <h1 className='text-3xl font-bold mb-4'>Come join us</h1>
-
-            <p>
-              Are you a musician looking to explore your creativity and collaborate with others to create amazing music? If so, <b>we invite you to join the Comusic beta test</b> and be a part of our community of musicians.
-              As a beta tester, you&apos;ll have the opportunity to participate in our collective music composition process, and help us figure out the best ways to create music together. You&apos;ll be able to suggest starting ideas and contribute to the compositions of others.
-              By participating in the Comusic beta test, you&apos;ll not only have the chance to collaborate with other talented musicians, but you&apos;ll also be helping to shape the future of the platform. Your feedback and ideas will be invaluable as we work to create the best possible experience for musicians looking to collaborate and create music together.
-              <b> So why wait? Join our discord and be a part of something truly special</b>. Together, we can create amazing music and push the boundaries of our art.
-            </p>
-          
-          </div>
         </div>
 
       </main>

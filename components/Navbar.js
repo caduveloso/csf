@@ -6,7 +6,7 @@ export default function Navbar() {
 
         <div className='container-lg py-4 mb-0 px-5 lg:px-0 bg-black bg-opacity-70 z-10'>
 
-            <div className='flex-none md:flex max-w-screen-lg mx-auto justify-between'>
+            <div className='flex-none md:flex max-w-screen-xl mx-auto justify-between'>
 
                 <div className='justify-start items-end'> {/*Left area*/}
 
@@ -23,7 +23,7 @@ export default function Navbar() {
 
 
 
-                <div className='justify-start md:justify-end items-end pt-8 md:pt-0 hidden md:flex'> {/*Right area*/}
+                <div className='justify-start md:justify-end items-end pt-8 md:pt-0 hidden md:flex md:mr-80 md:pr-24'> {/*Right area*/}
 
                     <ul className='flex gap-6 text-gray-400 font-thin'>
                         <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Calculadora</Link></li>

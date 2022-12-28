@@ -5,11 +5,10 @@ import { FaTwitter } from 'react-icons/fa/';
 export default function Footer() {
     return (
         
-        <div className='container-lg pb-8 mb-0 bg-black bg-opacity-100 px-8 lg:px-0'>
+        <div className='container-lg pt-20 pb-8 mb-0 bg-black bg-opacity-100 px-8 lg:px-0'>
 
-            <img className='w-auto md:w-1/6 mx-auto pb-16 -mt-6' src="/images/csf.png" />
             
-            <div className='flex flex-col max-w-screen-lg mx-auto justify-between items-end gap-10 text-white'>
+            <div className='flex flex-col max-w-screen-xl mx-auto justify-between items-end gap-10 text-white'>
                 <div className='container grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-0 text-white'>
 
                     <div className='flex flex-col gap-4 grid-cols-1'>

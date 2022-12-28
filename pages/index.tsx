@@ -29,9 +29,9 @@ export default function Home() {
       <main className='-mt-40'>
 
         <div className='py-6 bg-cover bg-center px-5 lg:px-0' style={{ backgroundImage: `url("/images/headerImg1.png")` }}>
-          <div className='flex max-w-screen-lg mx-auto items-center'>
+          <div className='flex max-w-screen-xl mx-auto items-center'>
             <div className='flex flex-col w-full items-center text-white pt-44 pb-10 md:pb-28 lg:pb-40 gap-16'>
-              <h1 className='text-5xl font-bold text-center mb-4 pt-10'>Impactos do garimpo ilegal de ouro</h1>
+              <h1 className='text-3xl font-light text-center mb-4 pt-10'>A calculadora é uma ferramenta analítica e pedagógica que descreve os impactos do garimpo ilegal de ouro, seus valores monetários e o passo-a-passo para sua mensuração.</h1>
               <div className='flex'>
                 <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULADORA</Button>
               </div>
@@ -39,12 +39,32 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col md:flex-row max-w-screen-lg mx-4 md:mx-auto pt-20 justify-between items-start gap-10 md:gap-10'>
+        <div className='flex flex-col md:flex-row max-w-screen-xl mx-4 md:mx-auto pt-20 justify-between items-end gap-10 md:gap-10'>
           <div className='w-full md:w-1/2'>
 
-            <h1 className='text-4xl font-bold mb-8'>Introdução</h1>
+            <h1 className='text-4xl font-bold mb-8'>Como funciona</h1>
 
-            <p className='mb-4'>A calculadora de impactos é fruto de uma parceria entre CSF e MPF, uma ferramenta analítica e pedagógica que descreve os impactos do garimpo ilegal de ouro, seus valores monetários e o passo-a-passo para sua mensuração.</p>
+            <div className='mb-4'>
+              <p>Você pode incluir algumas informações sobre o contexto para que a calculadora estime o valor dos impactos de forma mais precisa
+
+              A localização define outras variáveis como:</p>
+              <div className='mt-4'>
+                <ul>
+
+                  <li>-Densidade e tamanho da população afetada</li>
+
+                  <li>-Média de consumo de peixe</li>
+
+                  <li>-Custo de transporte para recuperação de áreas</li>
+
+                  <li>-Tipo de garimpo</li>
+
+                </ul>
+              </div>
+
+              <p className='mt-4'>Caso não tenha informações específicas, não tem problema, serão incluídos automaticamente valores médios de contexto e impacto e resultados e suas explicações serão gerados na sequencia.</p>
+
+            </div>
           
           </div>
           <div className='w-full md:w-1/2 ml-0 md:ml-10 p-4 border shadow-md'>
@@ -53,17 +73,17 @@ export default function Home() {
         </div>
         
 
-        <div className='mt-20 pt-20 pb-24 px-4 md:px-0 bg-gradient-to-r from-black to-gray-900 border-t-0 border-black'>
+        <div className='mt-20 pt-20 pb-24 px-4 md:px-0 bg-gradient-to-r from-black to-gray-900 border-t-0 border-black' style={{ backgroundImage: `url("/images/headerImg1.png")` }}>
 
-          <div className='max-w-screen-lg mx-auto'>
+          <div className='max-w-screen-xl mx-auto'>
             <div className='text-gray-100 text-left text-3xl md:text-4xl font-bold mb-14'>Entenda os impactos do garimpo</div>
 
             <div className='container p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-3 gap-12'>
 
               <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                  <img className='w-16 mx-auto pt-8' src="/images/deforestation.svg" />
-                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Desmatamento</div>
+                  <img className='w-24 mx-auto pt-0' src="/images/deforestation.svg" />
+                  <div className='text-xl font-bold mt-0 border-b px-4 py-4 text-center'>Desmatamento</div>
                 </div>
                 <div className='text-center px-6'>
                   Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso
@@ -73,8 +93,8 @@ export default function Home() {
 
               <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                  <img className='w-10 mx-auto pt-8' src="/images/river.svg" />
-                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Assoreamento dos rios</div>
+                  <img className='w-24 mx-auto pt-0' src="/images/river.svg" />
+                  <div className='text-xl font-bold mt-0 border-b px-4 py-4 text-center'>Assoreamento dos rios</div>
                 </div>
                 <div className='text-center px-6'>
                   A abertura de cavas gera erosão e assoreamento, enquanto balsas geram sedimentação. Como consequência, há uma piora na qualidade das águas.
@@ -84,8 +104,8 @@ export default function Home() {
 
               <div className="col-span-1 flex flex-col justify-between bg-white rounded-lg border-0 p-0 gap-4 shadow-xl">
                 <div>
-                  <img className='w-10 mx-auto pt-8' src="/images/contamination.svg" />
-                  <div className='text-xl font-bold mt-0 border-b p-4 text-center'>Contaminação por mercurio</div>
+                  <img className='w-24 mx-auto pt-0' src="/images/contamination.svg" />
+                  <div className='text-xl font-bold mt-0 border-b px-4 py-4 text-center'>Contaminação por mercurio</div>
                 </div>
                 <div className='text-center px-6'>
                 O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos
@@ -100,7 +120,7 @@ export default function Home() {
 
         <div className='mt-0 pt-20 pb-32 px-4 md:px-0 bg-gradient-to-r from-gray-50 to-gray-50 border-t-0 border-black'>
 
-          <div className='max-w-screen-lg mx-auto'>
+          <div className='max-w-screen-xl mx-auto'>
             <div className='text-left text-3xl md:text-4xl font-bold mb-14'>Saiba mais</div>
 
             <div className='container mx-auto p-0 grid grid-cols-1 sm:grid-cols-1 xl:grid-cols-2 gap-12'>
@@ -108,7 +128,7 @@ export default function Home() {
               <div className="col-span-1 flex bg-white rounded-lg p-0 gap-2 md:gap-4 shadow-lg">
                 <div className='flex w-1/3 rounded-tl-lg rounded-bl-lg bg-cover bg-center' style={{ backgroundImage: `url("/images/img1.png")` }}></div>
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
-                  <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Mapa do garimpo</div>
+                  <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Parceria com o Ministério Público</div>
                   <div className='mb-0'>
                     O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
                   </div>
@@ -143,7 +163,7 @@ export default function Home() {
                 <div className='flex w-2/3 flex-col p-4 gap-4'>
                   <div className='text-xl font-bold mt-2 border-b border-gray-400 pb-2'>Métodos de valoração</div>
                   <div className='mb-0'>
-                    O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos.
+                  O conceito de “valor” se refere à importância social de uma variação na qualidade ambiental sobre o nível de bem-estar da população.
                   </div>
                   <div className='text-sm mb-2 text-blue-600'>continue lendo...</div>
                 </div>

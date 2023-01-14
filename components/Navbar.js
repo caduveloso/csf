@@ -4,9 +4,9 @@ import Link from 'next/link';
 export default function Navbar() {
     return (
 
-        <div className='container-lg py-4 mb-0 px-5 lg:px-0 bg-black bg-opacity-70 z-10'>
+        <div className='flex py-4 px-6 bg-black bg-opacity-100 z-10'>
 
-            <div className='flex-none md:flex max-w-screen-xl mx-auto justify-between'>
+            <div className='w-full flex-none md:flex justify-between'>
 
                 <div className='justify-start items-end'> {/*Left area*/}
 
@@ -23,14 +23,11 @@ export default function Navbar() {
 
 
 
-                <div className='justify-start md:justify-end items-end pt-8 md:pt-0 hidden md:flex md:mr-80 md:pr-24'> {/*Right area*/}
+                <div className='justify-start md:justify-end items-end md:pt-0 hidden md:flex'> {/*Right area*/}
 
-                    <ul className='flex gap-6 text-gray-400 font-thin'>
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Calculadora</Link></li>
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Estudos de caso</Link></li> 
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Publicações</Link></li>
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Equipe</Link></li> 
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Contato</Link></li>
+                    <ul className='flex gap-6 text-gray-100 text-xs tracking-widest font-semibold uppercase'> 
+                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Experience</Link></li> 
+                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Contact</Link></li>
                     </ul>
 
                 </div>

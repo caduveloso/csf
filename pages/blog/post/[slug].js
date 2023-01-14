@@ -1,6 +1,9 @@
 import fs from 'fs';
 import matter from 'gray-matter';
 import md from 'markdown-it';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 export async function getStaticPaths() {
 
@@ -33,8 +36,16 @@ export default function PostPage({ frontmatter, content }) {
 
     return (
 
-        <div className='max-w-screen-lg p-4'>
-            <div className='prose prose-sm md:prose-xl'>
+        <div className='p-4'>
+            <Breadcrumbs aria-label="breadcrumb">
+                <Link underline="hover" color="inherit" href="/blog" className='block pl-1 underline-offset-4 cursor-pointer'>
+                    Works
+                </Link>
+                <Typography color="text.primary">
+                    Details
+                </Typography>
+            </Breadcrumbs>
+            <div className='prose prose-sm md:prose-2xl'>
                 <h1>{frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
             </div>

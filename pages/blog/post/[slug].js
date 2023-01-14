@@ -33,8 +33,8 @@ export default function PostPage({ frontmatter, content }) {
 
     return (
 
-        <div className='max-w-screen-lg mx-auto'>
-            <div className='prose prose-sm md:prose-lg'>
+        <div className='max-w-screen-lg p-4'>
+            <div className='prose prose-sm md:prose-xl'>
                 <h1>{frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
             </div>

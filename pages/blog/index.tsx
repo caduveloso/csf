@@ -37,11 +37,11 @@ export default function Blog({ posts }: any) {
 
   return (
 
-    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-4 md:p-0 max-w-screen-lg mx-auto gap-4'>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-4 md:p-4 mx-auto gap-4'>
       {posts.map(({ slug, frontmatter }: any) => (
         <div
           key={slug}
-          className='border border-gray-200 p-0 m-0 rounded-xl shadow-lg overflow-hidden flex flex-col'
+          className='border border-gray-200 p-0 m-0 shadow-lg overflow-hidden flex flex-col'
         >
           <Link href={`blog/post/${slug}`}>
               <Image

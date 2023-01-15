@@ -50,7 +50,7 @@ export default function Blog({ posts }: any) {
                 alt={frontmatter.title}
                 src={`/${frontmatter.socialImage}`}
               />
-              <h1 className='font-bold py-4'>{frontmatter.title}</h1>
+              <h1 className='font-bold pt-4 pb-2 leading-5'>{frontmatter.title}</h1>
           </Link>
         </div>
       ))}

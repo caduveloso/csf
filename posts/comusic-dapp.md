@@ -1,5 +1,5 @@
 ---
-title: 'Comusic.io Collaborative music Dapp'
+title: 'Creating a collaborative music Dapp'
 metaTitle: 'Comusic.io Collaborative music app'
 metaDesc: 'Comusic.io Collaborative music app - design and creation'
 socialImage: images/comusic_cover.png

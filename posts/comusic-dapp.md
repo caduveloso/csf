@@ -11,7 +11,7 @@ tags:
   - music
 ---
 
-Comusic is a web3 app Coded and designed by me in the end of 2022.  
+Comusic is a web3 app coded and designed by me in the end of 2022.  
 This is my long term project that brings together 2 passions: **crypto** and **music**
 
 You can check the progress on [comusic.io](www.comusic.io)

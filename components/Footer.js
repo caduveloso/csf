@@ -1,69 +1,48 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import { FaDiscord } from 'react-icons/fa/';
 import { FaTwitter } from 'react-icons/fa/';
 
 export default function Footer() {
     return (
         
-        <div className='container-lg pt-20 pb-8 mb-0 bg-black bg-opacity-100 px-8 lg:px-0'>
+        <div className='container-lg p-0 mb-0 bg-black bg-opacity-0 px-0 lg:px-0'>
 
             
-            <div className='flex flex-col max-w-screen-xl mx-auto justify-between items-end gap-10 text-white'>
-                <div className='container grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-0 text-white'>
+            <div className='flex flex-col mx-auto gap-0 text-white'>
+                <div className='flex justify-between gap-8 md:gap-0 p-10 text-xs tracking-widest font-semibold uppercase text-gray-900 text-center'>
 
-                    <div className='flex flex-col gap-4 grid-cols-1'>
-                        <div className='text-xl font-bold'>Premiações</div>
-                        <ul className='text-sm font-light'>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                        </ul>
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Calculadora</Link></div>
                     </div>
 
-                    <div className='flex flex-col gap-4 grid-cols-1'>
-                        <div className='text-xl font-bold'>Publicações</div>
-                        <ul className='text-sm font-light'>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                        </ul>
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Sobre</Link></div>
                     </div>
 
-                    <div className='flex flex-col gap-4 grid-cols-1'>
-                        <div className='text-xl font-bold'>Equipe</div>
-                        <ul className='text-sm font-light'>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                        </ul>
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Guia de uso</Link></div>
                     </div>
 
-                    <div className='flex flex-col gap-4 grid-cols-1'>
-                        <div className='text-xl font-bold'>Saiba mais</div>
-                        <ul className='text-sm font-light'>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                        </ul>
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Metodologia </Link></div>
                     </div>
 
-                    <div className='flex flex-col gap-4'>
-                        <div className='text-xl font-bold'>Notícias</div>
-                        <ul className='text-sm font-light'>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                            <li>lsjkhfd</li>
-                        </ul>
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Publicações</Link></div>
+                    </div>
+
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Equipe </Link></div>
+                    </div>
+
+                    <div className='flex'>
+                        <div className='hover:underline underline-offset-8 hover:text-black'><Link href="/">Contato</Link></div>
                     </div>
 
                 </div>
-                <div className='container border border-gray-400 text-gray-400 text-center p-4 mt-10'>
-                    <div className='text-xl font-bold'>Disclaimer</div>
-                    <div className='mt-4'>
-                        A CSF não se responsabiliza pelas consequências do uso da calculadora
-                    </div>
-                </div>
-                <div className='container flex justify-between mt-10'>
+                
+                <div className='container-lg flex justify-between px-10 py-4 bg-black'>
                     <div className='text-sm text-gray-500'>
                         &#169; CSF All rights reserved
                     </div>

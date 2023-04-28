@@ -3,11 +3,14 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Button from '@mui/material/Button';
 import { RiPlantFill } from 'react-icons/ri/';
+import { GiPlantRoots } from 'react-icons/gi/'; 
 import Tooltip from '@mui/material/Tooltip';
 import { RiNumber1 } from 'react-icons/ri';
 import { RiNumber2 } from 'react-icons/ri';
 import { RiNumber3 } from 'react-icons/ri';
 import { RiNumber4 } from 'react-icons/ri';
+
+import videoCover from '.././public/images/teste2.png'
 
 
 import React from 'react'
@@ -34,8 +37,8 @@ export default function Home() {
             <div className='flex w-full items-center justify-between text-white pt-48 pb-10 px-10 md:pb-28 lg:pb-40 gap-0'>
               <h1 className='text-4xl font-light text-left mb-4 pt-0 w-1/2'>The <span className='font-bold'>Deforestation Impacts Calculator</span> is a tool to assess the social and environmental damage caused by forest logging in the Amazon</h1>
               <div className='flex mx-auto gap-8'>
-                <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
-                <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
+                <Button className='bg-green-400 hover:bg-green-100 py-4 px-8 text-green-900 font-bold' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
+                <Button className='bg-green-400 hover:bg-green-100 py-4 px-8 text-green-900 font-bold' variant="contained" color="primary" size="large" href="/" target="_blank">GUIA DE USO</Button>
               </div>
             </div>
           </div>
@@ -46,20 +49,20 @@ export default function Home() {
         <div className='flex flex-col md:flex-row mx-4 md:mx-auto pt-0 justify-between items-center gap-10 md:gap-0'>
           <div className='w-full md:w-1/2 p-10 border-r-8 border-black'>
 
-            <div className='mb-4'>
-              <p>Você pode incluir algumas informações sobre o contexto para que a calculadora estime o valor dos impactos de forma mais precisa
+            <div className='mb-4 text-xl'>
+              <p>Você pode incluir algumas informações sobre o contexto para que a calculadora estime o valor dos impactos de forma mais precisa.<br/>
 
               A localização define outras variáveis como:</p>
               <div className='mt-4'>
                 <ul>
 
-                  <li>-Densidade e tamanho da população afetada</li>
+                  <li>- Densidade e tamanho da população afetada</li>
 
-                  <li>-Média de consumo de peixe</li>
+                  <li>- Média de consumo de peixe</li>
 
-                  <li>-Custo de transporte para recuperação de áreas</li>
+                  <li>- Custo de transporte para recuperação de áreas</li>
 
-                  <li>-Tipo de garimpo</li>
+                  <li>- Tipo de garimpo</li>
 
                 </ul>
               </div>
@@ -69,8 +72,9 @@ export default function Home() {
             </div>
           
           </div>
-          <div className='w-full md:w-1/2 ml-0 md:ml-0 p-0 border-0 shadow-md'>
-            <div className='bg-cover bg-center shadow-none bg-black'></div>
+
+          <div className='bg-cover bg-center w-1/2 h-[408px] border border-black bg-black' style={{ backgroundImage: `url("/images/teste2.png")` }}>
+          
           </div>
         </div>
 
@@ -84,25 +88,25 @@ export default function Home() {
 
               <div className="flex flex-col justify-between bg-white border-0 p-0 gap-4 shadow-none w-1/2 border-r-8 border-black">
                 <div>
-                  <img className='w-24 mx-auto pt-0' src="/images/deforestation.svg" />
-                  <div className='text-xl font-bold mt-0 border-b border-black px-4 py-4 text-center'>Restauração</div>
+                  <img className='w-16 mx-auto pt-8' src="/images/ico1.svg" />
+                  <div className='w-2/3 mx-auto text-3xl font-bold mt-0 border-b-2 border-black px-4 py-4 text-center'>Restauração</div>
                 </div>
-                <div className='text-center px-6'>
+                <div className='text-center px-6 w-2/3 mx-auto text-2xl'>
                   Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso
                 </div>
-                <div className='p-4 text-center w-full'><Button className='w-full py-2 px-4' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
+                <div className='p-10 text-center w-full'><Button className='shadow-sm font-bold w-1/4 py-4 px-4 text-green-800 border-green-400 hover:border-green-400 bg-green-400 hover:bg-green-500' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
               </div>
 
 
-              <div className="flex flex-col justify-between bg-white border-0 p-0 gap-4 shadow-none w-1/2">
+              <div className="flex flex-col justify-between bg-white border-0 p-0 gap-4 shadow-none w-1/2 border-r-0 border-black">
                 <div>
-                  <img className='w-24 mx-auto pt-0' src="/images/contamination.svg" />
-                  <div className='text-xl font-bold mt-0 border-b border-black px-4 py-4 text-center'>Serviços ecossistêmicos</div>
+                  <img className='w-16 mx-auto pt-8' src="/images/ico2.svg" />
+                  <div className='w-2/3 mx-auto text-3xl font-bold mt-0 border-b-2 border-black px-4 py-4 text-center'>Serviços Ecossistêmicos</div>
                 </div>
-                <div className='text-center px-6'>
-                O mercúrio despejado pelo garimpo gera impactos sobre o ambiente e sobre a saúde humana, como sintomas neuropsicológicos, cognitivos e cardíacos
+                <div className='text-center px-6 w-2/3 mx-auto text-2xl'>
+                  Áreas são abertas para escavação e para a construção de infraestrutura, como estradas e pistas de pouso
                 </div>
-                <div className='p-4 text-center w-full'><Button className='w-full py-2 px-4' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
+                <div className='p-10 text-center w-full'><Button className='shadow-sm font-bold w-1/4 py-4 px-4 text-green-800 border-green-400 hover:border-green-400 bg-green-400 hover:bg-green-500' variant="outlined" color="primary" size="medium" href="/" target="_blank">Leia mais</Button></div>
               </div>
               
             </div>

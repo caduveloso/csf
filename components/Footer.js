@@ -42,8 +42,8 @@ export default function Footer() {
 
                 </div>
                 
-                <div className='container-lg flex justify-between px-10 py-4 bg-black'>
-                    <div className='text-sm text-gray-500'>
+                <div className='container-lg flex justify-between items-end px-10 py-6 bg-black'>
+                    <div className='text-sm text-white'>
                         &#169; CSF All rights reserved
                     </div>
                     <div className='flex gap-3 text-gray-500'>

@@ -2,12 +2,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import Button from '@mui/material/Button';
-import { FaDiscord } from 'react-icons/fa/';
+import { RiPlantFill } from 'react-icons/ri/';
 import Tooltip from '@mui/material/Tooltip';
 import { RiNumber1 } from 'react-icons/ri';
 import { RiNumber2 } from 'react-icons/ri';
 import { RiNumber3 } from 'react-icons/ri';
 import { RiNumber4 } from 'react-icons/ri';
+
 
 import React from 'react'
 import ReactPlayer from 'react-player/youtube'
@@ -28,18 +29,19 @@ export default function Home() {
 
       <main className='-mt-40'>
 
-        <div className='pt-32 bg-cover bg-center px-5 lg:px-0' style={{ backgroundImage: `url("/images/headerImg1.png")` }}>
-          <div className='flex max-w-screen-xl mx-auto items-center border-b-8 border-black'>
-            <div className='flex w-full items-center justify-between text-white pt-48 pb-10 md:pb-28 lg:pb-40 gap-0'>
+        <div className='pt-32 bg-cover bg-center px-5 lg:px-0 bg-black' style={{ backgroundImage: `url("/images/test1.png")` }}>
+          <div className='flex mx-auto items-center border-b-8 border-black'>
+            <div className='flex w-full items-center justify-between text-white pt-48 pb-10 px-10 md:pb-28 lg:pb-40 gap-0'>
               <h1 className='text-4xl font-light text-left mb-4 pt-0 w-1/2'>The <span className='font-bold'>Deforestation Impacts Calculator</span> is a tool to assess the social and environmental damage caused by forest logging in the Amazon</h1>
-              <div className='flex mx-auto'>
+              <div className='flex mx-auto gap-8'>
+                <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
                 <Button className='bg-blue-500 py-4 px-8' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
               </div>
             </div>
           </div>
         </div>
 
-        <h1 className='text-4xl font-bold p-10 border-b-8 border-black'>Como funciona</h1>
+        <h1 className='flex text-4xl font-bold p-10 border-b-8 border-black gap-4 items-end'><RiPlantFill/>Como funciona</h1>
 
         <div className='flex flex-col md:flex-row mx-4 md:mx-auto pt-0 justify-between items-center gap-10 md:gap-0'>
           <div className='w-full md:w-1/2 p-10 border-r-8 border-black'>
@@ -72,7 +74,7 @@ export default function Home() {
           </div>
         </div>
 
-        <h1 className='text-4xl font-bold p-10 border-t-8 border-black'>Entenda os impactos do desmatamento</h1>        
+        <h1 className='flex text-4xl font-bold p-10 border-t-8 border-black gap-4 items-end'><RiPlantFill/> Entenda os impactos do desmatamento</h1>        
 
         <div className='mt-0 pt-0 pb-0 px-4 md:px-0 border-y-8 border-black'>
 

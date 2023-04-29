@@ -35,7 +35,7 @@ export default function Home() {
         <div className='pt-32 bg-cover bg-center px-5 lg:px-0 bg-black' style={{ backgroundImage: `url("/images/test1.png")` }}>
           <div className='flex mx-auto items-center border-b-8 border-black'>
             <div className='flex w-full items-center justify-between text-white pt-48 pb-10 px-10 md:pb-28 lg:pb-40 gap-0'>
-              <h1 className='text-4xl font-light text-left mb-4 pt-0 w-1/2'>The <span className='font-bold'>Deforestation Impacts Calculator</span> is a tool to assess the social and environmental damage caused by forest logging in the Amazon</h1>
+              <h1 className='text-4xl font-light text-left mb-4 pt-0 w-1/2'>The <span className='font-bold'>Deforestation Impacts Calculator</span> is <br/>a tool to assess the social and environmental damage caused by forest logging in the Amazon</h1>
               <div className='flex mx-auto gap-8'>
                 <Button className='bg-green-400 hover:bg-green-100 py-4 px-8 text-green-900 font-bold' variant="contained" color="primary" size="large" href="/" target="_blank">CALCULATOR</Button>
                 <Button className='bg-green-400 hover:bg-green-100 py-4 px-8 text-green-900 font-bold' variant="contained" color="primary" size="large" href="/" target="_blank">GUIA DE USO</Button>

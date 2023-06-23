@@ -18,10 +18,6 @@ You can check the progress on [comusic.io](http://www.comusic.io)
 
 ![Comusic Dapp view](/images/comusic_video.gif)
 --- ---
-![Comusic website](/images/comusic_website1.png "Comusic website")
---- ---
-![Comusic website](/images/comusic_website2.png "Comusic website")
---- ---
 ![Comusic project screen](/images/comusic1.png "Comusic project screen")
 --- ---
 ![Comusic profile screen](/images/comusic2.png "Comusic profile screen")

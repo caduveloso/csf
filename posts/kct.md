@@ -1,8 +1,8 @@
 ---
-title: 'Logo creation for teather director' 
+title: 'Creating a memecoin and a staking smart contract'
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
-socialImage: images/ribondi.png
+socialImage: images/kct.png
 date: '2023-01-13'
 tags:
   - design
@@ -16,6 +16,6 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/branding/ribondi/ribondi.png)
-![Comusic Dapp view](/images/branding/ribondi/revista.png)
+![Comusic Dapp view](/images/ui/stake.png)
+
 

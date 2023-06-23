@@ -16,7 +16,8 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/branding/marcio/logo_final.png)
-![Comusic Dapp view](/images/branding/marcio/LogoEscura_transparente.png)
-![Comusic Dapp view](/images/branding/marcio/2.jpg)
+![Comusic Dapp view](/images/branding/marcio/quadro.png)
+![Comusic Dapp view](/images/branding/marcio/vinheta.gif)
+![Comusic Dapp view](/images/branding/marcio/manual.png)
 ![Comusic Dapp view](/images/branding/marcio/papel.jpg)
+![Comusic Dapp view](/images/branding/marcio/vinheta2.gif)

@@ -16,15 +16,12 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/branding/medicinal/caixaPapelao.png)
+![Comusic Dapp view](/images/branding/medicinal/tela1.png)
 ![Comusic Dapp view](/images/branding/medicinal/carimbo.png)
 ![Comusic Dapp view](/images/branding/medicinal/cartao.jpg)
 ![Comusic Dapp view](/images/branding/medicinal/celular_post.jpg)
+![Comusic Dapp view](/images/branding/medicinal/caixaPapelao.png)
 ![Comusic Dapp view](/images/branding/medicinal/embalagemPapel.jpg)
-![Comusic Dapp view](/images/branding/medicinal/EnemaMedicinal_1.png)
-![Comusic Dapp view](/images/branding/medicinal/EnemaMedicinal_2.png)
-![Comusic Dapp view](/images/branding/medicinal/EnemaMedicinal_3.png)
-![Comusic Dapp view](/images/branding/medicinal/EnemaMedicinal_4.png)
 ![Comusic Dapp view](/images/branding/medicinal/lata.png)
 ![Comusic Dapp view](/images/branding/medicinal/sacola.png)
-![Comusic Dapp view](/images/branding/medicinal/tela1.png)
+![Comusic Dapp view](/images/branding/medicinal/insta_mockup.png)

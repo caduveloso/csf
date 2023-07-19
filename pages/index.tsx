@@ -6,6 +6,8 @@ import { Inter } from '@next/font/google'
 import fs from 'fs';
 import matter from 'gray-matter';
 
+import videosCover from '../public/images/video.jpg'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export async function getStaticProps() {
@@ -38,6 +40,16 @@ export default function Blog({ posts }: any) {
   return (
 
     <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-0 md:p-4 mx-auto gap-2 bg-gradient-to-rt from-gray-300 to-gray-100'>
+      <div className='bg-white border-8 border-white p-0 m-0 shadow-lg overflow-hidden flex flex-col'>
+        <Image
+          width={650}
+          height={340}
+          alt="videos"
+          src={videosCover}
+        />
+        <h1 className='font-bold pt-4 pb-2 leading-5'>Video and animation work</h1>
+      </div>
+      
       {posts.map(({ slug, frontmatter }: any) => (
         <div
           key={slug}

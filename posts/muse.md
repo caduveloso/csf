@@ -1,8 +1,8 @@
 ---
-title: 'Front end & Social media for a MuseDAO' 
+title: 'Front end & Social media for MuseDAO' 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
-socialImage: images/duck.png
+socialImage: images/muse.png
 date: '2023-01-13'
 tags:
   - design

@@ -16,9 +16,9 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/ui/yfka.png)
-![Comusic Dapp view](/images/ui/yfka2.png)
-![Comusic Dapp view](/images/ui/xamp.png)
-![Comusic Dapp view](/images/ui/tob.png)
-![Comusic Dapp view](/images/ui/king_of_the_hill.png)
+![Comusic Dapp view](/images/ui/bill/yfka.png)
+![Comusic Dapp view](/images/ui/bill/yfka2.png)
+![Comusic Dapp view](/images/ui/bill/xamp.png)
+![Comusic Dapp view](/images/ui/bill/tob.png)
+![Comusic Dapp view](/images/ui/bill/king_of_the_hill.png)
 

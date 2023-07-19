@@ -16,6 +16,6 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/ui/stake.png)
+![Comusic Dapp view](/images/ui/kct/stake.png)
 
 

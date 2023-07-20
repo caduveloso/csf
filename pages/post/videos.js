@@ -92,14 +92,14 @@ function Videos() {
                 <Fade in={open}>
                     <Box sx={style}> 
                         <div className='flex w-3/4 items-center bg-black'>
-                            <video ref={videoRef} src={selectedVideo} controls muted autoplay='true'></video>
+                            <video ref={videoRef} src={selectedVideo} controls muted autoplay='true' className='w-full h-full'></video>
                             <label id='main-info'></label>
                         </div>
                         <div className='flex flex-col w-1/4 gap-4'>
                             {playlist.map((video, index) => (
                                 <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
-                                    <div onClick={() => loadVideo(video.src)} className=''>
-                                        <video src={video.src} muted className='w-full'></video>
+                                    <div onClick={() => loadVideo(video.src)}>
+                                        <video src={video.src} muted></video>
                                         <div className='text-sm font-regular text-black mt-2'>{video.title}</div>
                                     </div>
                                 </div>

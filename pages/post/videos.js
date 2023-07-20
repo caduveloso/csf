@@ -49,7 +49,7 @@ function videos() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const [selectedVideo, setSelectedVideo] = useState("/videos/video1.mp4");
+    const [selectedVideo, setSelectedVideo] = useState("/videos/video1.mp4"); //autoplays the first video
 
     function loadVideo(chosenVideo){
         setSelectedVideo(chosenVideo);

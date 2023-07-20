@@ -99,7 +99,7 @@ function Videos() {
                             {playlist.map((video, index) => (
                                 <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
                                     <div onClick={() => loadVideo(video.src)} className=''>
-                                        <video src={video.src} muted></video>
+                                        <video src={video.src} muted className='w-full'></video>
                                         <div className='text-sm font-regular text-black mt-2'>{video.title}</div>
                                     </div>
                                 </div>

@@ -43,7 +43,7 @@ const playlist = [
 
 
 
-function videos() {
+function Videos() {
 
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
@@ -113,4 +113,4 @@ function videos() {
   )
 }
 
-export default videos
+export default Videos

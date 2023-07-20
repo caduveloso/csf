@@ -16,7 +16,7 @@ This is my long term project that brings together 2 passions: **crypto** and **m
 
 You can check the progress on [comusic.io](http://www.comusic.io)
 
-![Comusic Dapp view](/images/ui/duckstarter/theGoodideia.png)
+![Comusic Dapp view](/images/ui/duckstarter/theGoodIdeia.jpg)
 ![Comusic Dapp view](/images/socialmedia/duckdao/Launching.png)
 ![Comusic Dapp view](/images/ui/duckstarter/duckstarter11.png)
 ![Comusic Dapp view](/images/ui/duckstarter/duckstarter22.png)

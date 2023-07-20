@@ -97,8 +97,8 @@ function Videos() {
                         </div>
                         <div className='flex flex-col w-1/4 gap-4'>
                             {playlist.map((video, index) => (
-                                <div className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
-                                    <div key={index} onClick={() => loadVideo(video.src)} className=''>
+                                <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
+                                    <div onClick={() => loadVideo(video.src)} className=''>
                                         <video src={video.src} muted></video>
                                         <div className='text-sm font-regular text-black mt-2'>{video.title}</div>
                                     </div>

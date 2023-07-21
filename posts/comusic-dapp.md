@@ -1,5 +1,5 @@
 ---
-title: 'Creating a collaborative music Dapp'
+title: "Bulding an NFT-Powered Music Collaboration Platform from Scratch"
 metaTitle: 'Comusic.io Collaborative music app'
 metaDesc: 'Comusic.io Collaborative music app - design and creation'
 socialImage: images/comusic_cover.png

@@ -1,9 +1,15 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import md from 'markdown-it';
+import markdownIt from 'markdown-it';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+
+
+
+const md = markdownIt({
+  html: true,
+});
 
 export async function getStaticPaths() {
 
@@ -34,6 +40,11 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
 
+    const customTitleStyles = {
+        fontSize: '4rem', 
+        fontWeight: 900, 
+      };
+
     return (
 
         <div className='p-4'>
@@ -46,8 +57,8 @@ export default function PostPage({ frontmatter, content }) {
                 </Typography>
             </Breadcrumbs>
             <div className='prose prose-sm md:prose-2xl'>
-                <h1>{frontmatter.title}</h1>
-                <div dangerouslySetInnerHTML={{ __html: md().render(content) }} />
+                <h1 style={customTitleStyles}>{frontmatter.title}</h1>
+                <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
             </div>
         </div>
 

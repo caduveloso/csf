@@ -1,5 +1,5 @@
 ---
-title: 'Visual identity for herbal product' 
+title: "Nurturing Branding for Natural Products" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/medicinal.png

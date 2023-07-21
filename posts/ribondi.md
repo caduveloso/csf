@@ -1,5 +1,5 @@
 ---
-title: 'Logo creation for teather director' 
+title: "Logo Design for Theater Director Alexandre Ribondi" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/ribondi.png

@@ -1,7 +1,7 @@
 ---
-title: 'Social media for an online cassino' 
-metaTitle: 'Selection of branding work'
-metaDesc: 'Selection of branding work'
+title: "Social Media Designs for a Cryptocurrency Casino"
+metaTitle: "Social Media Designs for a Cryptocurrency Casino"
+metaDesc: "Social Media Designs for a Cryptocurrency Casino"
 socialImage: images/chipstars.png
 date: '2023-01-13'
 tags:
@@ -11,10 +11,9 @@ tags:
   - music
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
+Working closely with Chipstar, a valued client of DuckDAO incubator, I had the privilege to contribute to their online presence by designing social media content for their cryptocurrency casino.
 
-You can check the progress on [comusic.io](http://www.comusic.io)
+Take a look at some of the creations:
 
 ![Comusic Dapp view](/images/socialmedia/chipstars/Chips.png)
 ![Comusic Dapp view](/images/socialmedia/chipstars/ChipStars2.png)
@@ -28,7 +27,3 @@ You can check the progress on [comusic.io](http://www.comusic.io)
 ![Comusic Dapp view](/images/socialmedia/chipstars/Howto1.png)
 ![Comusic Dapp view](/images/socialmedia/chipstars/Howto2.png)
 ![Comusic Dapp view](/images/socialmedia/chipstars/Howto3.png)
-
-
-
-

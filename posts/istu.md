@@ -1,5 +1,5 @@
 ---
-title: 'Branding and illustration for t-shirt collection' 
+title: "Logo and Illustrations for a Trendy T-Shirt Shop" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/istu.png

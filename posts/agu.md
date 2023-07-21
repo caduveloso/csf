@@ -1,34 +1,26 @@
 ---
-title: 'Brazil General Counsel Visual identity' 
-metaTitle: 'Selection of branding work'
-metaDesc: 'Selection of branding work'
+title: "Design Journey with Brazil's General Counsel: Print, Digital & Promotional"
+metaTitle: "Design Journey with Brazil's General Counsel: Print, Digital & Promotional"
+metaDesc: "Design Journey with Brazil's General Counsel: Print, Digital & Promotional"
 socialImage: images/agu.png
 date: '2023-01-13'
 tags:
   - design
-  - web3
-  - NFT
-  - music
+  - branding
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
+During my rewarding three-year collaboration with Brazil's General Counsel, I crafted versatile designs across print, digital, and promotional mediums. It was a valuable experience that further developed my skills as a collaborative and adaptable designer.
 
-You can check the progress on [comusic.io](http://www.comusic.io)
+Let's take a glimpse of the accomplishments from my time there...
 
+![Comusic Dapp view](/images/branding/agu/RelGestao.jpg)
 ![Comusic Dapp view](/images/branding/agu/100_Dias.jpg)
-![Comusic Dapp view](/images/branding/agu/aguMaisVida.jpg)
 ![Comusic Dapp view](/images/branding/agu/balanco_2019.jpg)
 ![Comusic Dapp view](/images/branding/agu/balanco.jpg)
 ![Comusic Dapp view](/images/branding/agu/cartasServicos.jpg)
-![Comusic Dapp view](/images/branding/agu/cartaz_incendio.jpg)
 ![Comusic Dapp view](/images/branding/agu/grafico.jpg)
+![Comusic Dapp view](/images/branding/agu/aguMaisVida.jpg)
 ![Comusic Dapp view](/images/branding/agu/logo_amazonia.jpg)
-![Comusic Dapp view](/images/branding/agu/manualRedacao.jpg)
-![Comusic Dapp view](/images/branding/agu/OM_banner_vertical.png)
-![Comusic Dapp view](/images/branding/agu/OM_banner.png)
 ![Comusic Dapp view](/images/branding/agu/OM_convite.png)
 ![Comusic Dapp view](/images/branding/agu/OM_envelope.jpg)
 ![Comusic Dapp view](/images/branding/agu/panorama_2017_1.png)
-![Comusic Dapp view](/images/branding/agu/RelGestao.jpg)
-![Comusic Dapp view](/images/branding/agu/sacola.jpg)

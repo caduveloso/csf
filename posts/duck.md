@@ -1,5 +1,5 @@
 ---
-title: 'Social media for crypto incubator' 
+title: "Crafting Twitter Designs and More for DuckDAO" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/duck.png

@@ -1,5 +1,5 @@
 ---
-title: 'Front end & graphic design for a token launch platform'
+title: "User-Centric UI and Token Launch Social Media"
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/duckstarter.png

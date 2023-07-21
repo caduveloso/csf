@@ -1,5 +1,5 @@
 ---
-title: 'Creating a memecoin and a staking smart contract'
+title: "Exploring the Blockchain: Meme Coin Creation and Smart Contract Staking on Pulsechain"
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/kct.png

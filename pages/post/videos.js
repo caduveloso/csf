@@ -135,7 +135,7 @@ function Videos() {
           alt="videos"
           src={videosCover}
         />
-        <h1 className='font-bold pt-4 pb-2 leading-5 cursor-pointer' onClick={handleOpen}>Video and animation work</h1>
+        <h1 className='font-bold pt-4 pb-2 leading-5 cursor-pointer' onClick={handleOpen}>Motion Graphics Showcase: <br/> <span className='font-normal'>The Art of Animated Storytelling</span></h1>
         <div>
             
             <Modal

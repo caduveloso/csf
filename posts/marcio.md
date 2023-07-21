@@ -1,5 +1,5 @@
 ---
-title: 'Video Maker logo' 
+title: "Creating a Striking Logo for a Video Maker" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/marcio.png

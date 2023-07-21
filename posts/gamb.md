@@ -1,5 +1,5 @@
 ---
-title: 'Layout design for a defi protocol' 
+title: "UI/UX Design for DeFi Project: A Clean and Intuitive Interface" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/gamb.png

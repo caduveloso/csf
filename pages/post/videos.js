@@ -43,10 +43,6 @@ const playlist = [
         title: "Motion graphics the Public Ministry",
     },
     {
-        src: "/videos/ceub1.mp4",
-        title: "Motion graphics for a university",
-    },
-    {
         src: "/videos/Doctum.mp4",
         title: "Doctum - Animation for a university",
     },

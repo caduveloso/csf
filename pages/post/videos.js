@@ -32,54 +32,62 @@ const style = {
 const playlist = [
     {
         src: "/videos/animationReel.mp4",
+        thumb: "/images/thumb1.png",
         title: "Animation Reel",
     },
     {
         src: "/videos/naPraia.mp4",
+        thumb: "/images/thumb2.png",
         title: "Animation for a beach party",
     },
     {
         src: "/videos/mpu2.mp4",
+        thumb: "/images/thumb3.png",
         title: "Motion graphics the Public Ministry",
     },
     {
         src: "/videos/Doctum.mp4",
+        thumb: "/images/thumb4.png",
         title: "Doctum - Animation for a university",
     },
     {
         src: "/videos/ceubReel.mp4",
+        thumb: "/images/thumb5.png",
         title: "Footage Reel",
     },
     {
         src: "/videos/mpu1.mp4",
+        thumb: "/images/thumb6.png",
         title: "Motion graphics the Public Ministry",
     },
     {
         src: "/videos/mpu3.mp4",
-        title: "Motion graphics the Public Ministry",
-    },
-    {
-        src: "/videos/mpu4.mp4",
+        thumb: "/images/thumb7.png",
         title: "Motion graphics the Public Ministry",
     },
     {
         src: "/videos/Squintz.mp4",
+        thumb: "/images/thumb8.png",
         title: "Video Clip for a rock band",
     },
     {
         src: "/videos/Coralli1.mp4",
+        thumb: "/images/thumb9.png",
         title: "Motion graphics example 1",
     },
     {
         src: "/videos/Coralli2.mp4",
+        thumb: "/images/thumb10.png",
         title: "Motion graphics example 2",
     },
     {
         src: "/videos/Coralli3.mp4",
+        thumb: "/images/thumb11.png",
         title: "Motion graphics example 2",
     },
     {
         src: "/videos/youtubeMotion.mp4",
+        thumb: "/images/thumb12.png",
         title: "Motion graphics",
     }
 ];
@@ -143,7 +151,7 @@ function Videos() {
                             {playlist.map((video, index) => (
                                 <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
                                     <div onClick={() => loadVideo(video.src)}>
-                                        <video src={video.src} muted></video>
+                                        <img src={video.thumb}></img>
                                         <div className='text-sm font-regular text-black mt-2'>{video.title}</div>
                                     </div>
                                 </div>

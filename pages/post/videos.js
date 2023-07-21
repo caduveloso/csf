@@ -28,15 +28,67 @@ const style = {
 
 
 //create array with videos here
-
+// add thumbnail for videos and replace line 144. Instead of a video tag, add a simple div with the thumb
 const playlist = [
     {
-        src: "/videos/video1.mp4",
-        title: "teste video 1",
+        src: "/videos/animationReel.mp4",
+        title: "Animation Reel",
     },
     {
-        src: "/videos/video2.mp4",
-        title: "teste video 2",
+        src: "/videos/naPraia.mp4",
+        title: "Animation for a beach party",
+    },
+    {
+        src: "/videos/mpu2.mp4",
+        title: "Motion graphics the Public Ministry",
+    },
+    {
+        src: "/videos/ceub1.mp4",
+        title: "Motion graphics for a university",
+    },
+    {
+        src: "/videos/Doctum.mp4",
+        title: "Doctum - Animation for a university",
+    },
+    {
+        src: "/videos/ceubReel.mp4",
+        title: "Footage Reel",
+    },
+    {
+        src: "/videos/mpu1.mp4",
+        title: "Motion graphics the Public Ministry",
+    },
+    {
+        src: "/videos/mpu3.mp4",
+        title: "Motion graphics the Public Ministry",
+    },
+    {
+        src: "/videos/mpu4.mp4",
+        title: "Motion graphics the Public Ministry",
+    },
+    {
+        src: "/videos/mpu5.mp4",
+        title: "Motion graphics the Public Ministry",
+    },
+    {
+        src: "/videos/Squintz.mp4",
+        title: "Video Clip for a rock band",
+    },
+    {
+        src: "/videos/Coralli1.mp4",
+        title: "Motion graphics example 1",
+    },
+    {
+        src: "/videos/Coralli2.mp4",
+        title: "Motion graphics example 2",
+    },
+    {
+        src: "/videos/Coralli3.mp4",
+        title: "Motion graphics example 2",
+    },
+    {
+        src: "/videos/youtubeMotion.mp4",
+        title: "Motion graphics",
     }
 ];
 
@@ -95,7 +147,7 @@ function Videos() {
                             <video ref={videoRef} src={selectedVideo} controls muted autoplay='true' className='w-full h-full'></video>
                             <label id='main-info'></label>
                         </div>
-                        <div className='flex flex-col w-1/4 gap-4'>
+                        <div className='flex flex-col w-1/4 gap-4 overflow-y-auto pr-4'>
                             {playlist.map((video, index) => (
                                 <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
                                     <div onClick={() => loadVideo(video.src)}>

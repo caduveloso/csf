@@ -14,8 +14,8 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '60%',
-    height: '70%',
+    width: '80%',
+    height: '85%',
     bgcolor: 'background.paper',
     border: '0px solid #000',
     borderRadius: 1,
@@ -25,6 +25,16 @@ const style = {
     display: 'flex',
     gap: 4, 
   };
+
+  const responsiveStyle = {
+    '@media (max-width: 1024px)': {
+      flexDirection: 'column',
+      width: '80%',
+      height: 'auto',
+    },
+  };
+
+  const mergedStyle = { ...style, ...responsiveStyle };
 
 
 //create array with videos here
@@ -142,17 +152,17 @@ function Videos() {
                 }}
                 >
                 <Fade in={open}>
-                    <Box sx={style}> 
-                        <div className='flex w-3/4 items-center bg-black'>
+                    <Box sx={mergedStyle}>
+                        <div className='flex w-full lg:w-3/4 items-center bg-black'>
                             <video ref={videoRef} src={selectedVideo} controls muted autoplay='true' className='w-full h-full'></video>
                             <label id='main-info'></label>
                         </div>
-                        <div className='flex flex-col w-1/4 gap-4 overflow-y-auto pr-4'>
+                        <div className='flex flex-row lg:flex-col w-full lg:w-1/4 gap-4 overflow-x-auto overflow-y-hidden lg:overflow-x-hidden lg:overflow-y-auto pb-4 lg:pr-4'>
                             {playlist.map((video, index) => (
-                                <div key={index} className={`flex rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
+                                <div key={index} className={`flex min-w-[130px] rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
                                     <div onClick={() => loadVideo(video.src)}>
                                         <img src={video.thumb}></img>
-                                        <div className='text-sm font-regular text-black mt-2'>{video.title}</div>
+                                        <div className='hidden lg:block text-xs md:text-sm font-regular text-black mt-2'>{video.title}</div>
                                     </div>
                                 </div>
                             ))}

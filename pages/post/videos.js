@@ -67,10 +67,6 @@ const playlist = [
         title: "Motion graphics the Public Ministry",
     },
     {
-        src: "/videos/mpu5.mp4",
-        title: "Motion graphics the Public Ministry",
-    },
-    {
         src: "/videos/Squintz.mp4",
         title: "Video Clip for a rock band",
     },

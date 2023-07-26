@@ -58,7 +58,7 @@ export default function PostPage({ frontmatter, content }) {
 
         <div className='p-4'>
             <Breadcrumbs aria-label="breadcrumb">
-                <Link underline="hover" color="inherit" href="/" className='block pl-1 underline-offset-4 cursor-pointer'>
+                <Link underline="hover" color="inherit" href="/" className='block pl-0 underline-offset-4 cursor-pointer'>
                     Works
                 </Link>
                 <Typography color="text.primary">

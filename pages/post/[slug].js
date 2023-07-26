@@ -40,10 +40,19 @@ export async function getStaticProps({ params: { slug } }) {
 
 export default function PostPage({ frontmatter, content }) {
 
-    const customTitleStyles = {
-        fontSize: '4rem', 
+    /*const customTitleStyles = {
+        fontSize: '4rem',
         fontWeight: 900, 
       };
+
+    const responsiveStyle = {
+    '@media (max-width: 1024px)': {
+        fontSize: '10px', 
+        fontWeight: 900, 
+    },
+    };
+
+    const mergedStyle = { ...customTitleStyles, ...responsiveStyle };*/
 
     return (
 
@@ -57,7 +66,7 @@ export default function PostPage({ frontmatter, content }) {
                 </Typography>
             </Breadcrumbs>
             <div className='prose prose-sm md:prose-2xl'>
-                <h1 style={customTitleStyles}>{frontmatter.title}</h1>
+                <h1 /*style={mergedStyle}*/>{frontmatter.title}</h1>
                 <div dangerouslySetInnerHTML={{ __html: md.render(content) }} />
             </div>
         </div>

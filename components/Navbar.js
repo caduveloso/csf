@@ -17,7 +17,7 @@ export default function Navbar() {
                             </Link>
                         </button> 
                     </div>
-                    <span className='text-white text-xs w-full tracking-wider leading-4 pb-1 hidden lg:block'>
+                    <span className='text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white hidden lg:block'>
                         <span>Curated Showcase of my Latest Work as a Graphic Designer, Motion Artist and Front-End Developer:</span> <br/> <span className='font-bold'>A Valuable Fusion of Design and Development Expertise</span>
                     </span>
 

@@ -157,7 +157,7 @@ function Videos() {
                 <Fade in={open}>
                     <Box sx={mergedStyle}>
                         <div className='flex w-full lg:w-3/4 items-center bg-black'>
-                            <video ref={videoRef} src={selectedVideo} controls muted autoplay='true' className='w-full h-full'></video>
+                            <video ref={videoRef} src={selectedVideo} controls muted autoplay='true' className='w-full h-full min-h-[400px]'></video>
                             <label id='main-info'></label>
                         </div>
                         <div className='flex flex-row lg:flex-col w-full lg:w-1/4 gap-4 overflow-x-auto overflow-y-hidden lg:overflow-x-hidden lg:overflow-y-auto pb-4 lg:pr-4'>

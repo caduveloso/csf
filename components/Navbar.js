@@ -13,7 +13,7 @@ export default function Navbar() {
                     <div className='flex items-baseline'>
                         <button>
                             <Link href='/'>
-                            <span className='text-2xl lg:text-4xl text-white font-bold uppercase'>Cadu</span><span className='ml-1 text-2xl lg:text-4xl text-white font-thin uppercase'>Veloso</span>
+                            <span className='text-4xl lg:text-4xl text-white font-bold uppercase'>Cadu</span><span className='ml-1 text-4xl lg:text-4xl text-white font-thin uppercase'>Veloso</span>
                             </Link>
                         </button> 
                     </div>

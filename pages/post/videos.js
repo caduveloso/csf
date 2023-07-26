@@ -29,8 +29,11 @@ const style = {
   const responsiveStyle = {
     '@media (max-width: 1024px)': {
       flexDirection: 'column',
-      width: '80%',
+      width: '100%',
       height: 'auto',
+      p: 1,
+      borderRadius: 0,
+      gap: 2,
     },
   };
 
@@ -159,7 +162,7 @@ function Videos() {
                         </div>
                         <div className='flex flex-row lg:flex-col w-full lg:w-1/4 gap-4 overflow-x-auto overflow-y-hidden lg:overflow-x-hidden lg:overflow-y-auto pb-4 lg:pr-4'>
                             {playlist.map((video, index) => (
-                                <div key={index} className={`flex min-w-[130px] rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
+                                <div key={index} className={`flex min-w-[80px] rounded-sm p-2 border ${selectedVideo == video.src ? 'border-gray-300 shadow-2xl' : 'border-gray-200 shadow-sm'}`}>
                                     <div onClick={() => loadVideo(video.src)}>
                                         <img src={video.thumb}></img>
                                         <div className='hidden lg:block text-xs md:text-sm font-regular text-black mt-2'>{video.title}</div>

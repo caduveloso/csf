@@ -13,13 +13,13 @@ export default function Navbar() {
                     <div className='flex items-baseline'>
                         <button>
                             <Link href='/'>
-                            <span className='text-4xl text-white font-bold uppercase'>Cadu</span><span className='ml-1 text-4xl text-white font-thin uppercase'>Veloso</span>
+                            <span className='text-2xl lg:text-4xl text-white font-bold uppercase'>Cadu</span><span className='ml-1 text-2xl lg:text-4xl text-white font-thin uppercase'>Veloso</span>
                             </Link>
                         </button> 
                     </div>
-                    <span className='text-white text-xs w-full tracking-wider leading-4 pb-1'>
+                    <span className='text-white text-xs w-full tracking-wider leading-4 pb-1 hidden lg:block'>
                         <span>Curated Showcase of my Latest Work as a Graphic Designer, Motion Artist and Front-End Developer:</span> <br/> <span className='font-bold'>A Valuable Fusion of Design and Development Expertise</span>
-                    </span> 
+                    </span>
 
                 </div>
 

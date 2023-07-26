@@ -11,10 +11,8 @@ tags:
   - music
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
+In a curious twist of fate, my team and I took on a thrilling adventure – designing an interface, logo, and website for a DeFi protocol. But alas, our payment vanished into thin air, just like the mysterious client who commissioned the project. Despite the unexpected outcome, we treasure the experience as a valuable lesson in the ever-exciting world of crypto.
 
-You can check the progress on [comusic.io](http://www.comusic.io)
 
 ![Comusic Dapp view](/images/ui/gamb/teste1.png)
 ![Comusic Dapp view](/images/ui/gamb/teste2.png)

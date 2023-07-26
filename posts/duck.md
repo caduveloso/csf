@@ -11,12 +11,18 @@ tags:
   - music
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
-
-You can check the progress on [comusic.io](http://www.comusic.io)
-
 ![Comusic Dapp view](/images/socialmedia/duckdao/Duck16.png)
+
+As a valued partner of DuckDAO, I had the privilege to work on various projects, including DuckStarter, a token launch platform, as well as branding and social media designs for the company. 
+
+![Comusic Dapp view](/images/socialmedia/duckdao/mosaic.png)
+
+DuckDAO, a crypto incubator focused on building innovative products in the cryptocurrency space, provided an exciting opportunity for me to contribute my design expertise to their ventures.
+
+-- --
+
+Here is a sample of my contribution to DuckDAO social media...
+
 ![Comusic Dapp view](/images/socialmedia/duckdao/Duck13.png)
 ![Comusic Dapp view](/images/socialmedia/duckdao/newPool.png)
 ![Comusic Dapp view](/images/socialmedia/duckdao/AMA_concept3.jpg)

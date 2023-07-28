@@ -11,10 +11,9 @@ tags:
   - music
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
 
-You can check the progress on [comusic.io](http://www.comusic.io)
+
+This is a logo I designed for the renowned theater director, Alexandre Ribondi, incorporating a symbolic yellow chair with a spotlight above it, inspired by his distinct habit of using a yellow chair in his rehearsals. The logo encapsulates his artistic essence in a simple yet impactful design.
 
 ![Comusic Dapp view](/images/branding/ribondi/ribondi.png)
 ![Comusic Dapp view](/images/branding/ribondi/revista.png)

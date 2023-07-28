@@ -56,7 +56,7 @@ const playlist = [
     {
         src: "/videos/mpu2.mp4",
         thumb: "/images/thumb3.png",
-        title: "Motion graphics the Public Ministry",
+        title: "Motion graphics for the Public Ministry",
     },
     {
         src: "/videos/Doctum.mp4",
@@ -71,17 +71,17 @@ const playlist = [
     {
         src: "/videos/mpu1.mp4",
         thumb: "/images/thumb6.png",
-        title: "Motion graphics the Public Ministry",
+        title: "Motion graphics for the Public Ministry",
     },
     {
         src: "/videos/mpu3.mp4",
         thumb: "/images/thumb7.png",
-        title: "Motion graphics the Public Ministry",
+        title: "Motion graphics for the Public Ministry",
     },
     {
         src: "/videos/Squintz.mp4",
         thumb: "/images/thumb8.png",
-        title: "Video Clip for a rock band",
+        title: "Music video for a rock band",
     },
     {
         src: "/videos/Coralli1.mp4",
@@ -96,7 +96,7 @@ const playlist = [
     {
         src: "/videos/Coralli3.mp4",
         thumb: "/images/thumb11.png",
-        title: "Motion graphics example 2",
+        title: "Motion graphics example 3",
     },
     {
         src: "/videos/youtubeMotion.mp4",

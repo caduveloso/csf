@@ -11,13 +11,18 @@ tags:
   - music
 ---
 
-Comusic is a web3 app coded and designed by me in the end of 2022.  
-This is my long term project that brings together 2 passions: **crypto** and **music**
-
-You can check the progress on [comusic.io](http://www.comusic.io)
+This is a logo I created for a talented video maker, capturing their creative essence in a simple yet memorable design.
 
 ![Comusic Dapp view](/images/branding/marcio/quadro.png)
+
+Using After Effects I created this cool animation for him to use as a signature on his videos..
+
 ![Comusic Dapp view](/images/branding/marcio/vinheta.gif)
 ![Comusic Dapp view](/images/branding/marcio/manual.png)
+
+--  --
+
+...The one below was a first alternative. I liked it as well and decided to keep it here.
+
 ![Comusic Dapp view](/images/branding/marcio/papel.jpg)
 ![Comusic Dapp view](/images/branding/marcio/vinheta2.gif)

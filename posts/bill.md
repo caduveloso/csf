@@ -29,7 +29,7 @@ These seemingly simple jobs opened the doors to the vast possibilities of a desi
 ![Comusic Dapp view](/images/ui/bill/xamp.png)
 ![Comusic Dapp view](/images/ui/bill/tob.png)
 
-Teaming up with Bill Drummond, we collaborated on his final project, "King of the Hill," an earnest effort that reflected our shared passion for innovation.
+Teaming up with Bill Drummond, I collaborated on his final project, "King of the Hill," an earnest effort that reflected our shared passion for innovation.
 <small>(Check my layout suggestions [here](http://103.89.12.183/portfolio/koth/2) and [here](http://103.89.12.183/portfolio/koth/1) for the KOTH game website)</small>
 
 ![Comusic Dapp view](/images/ui/bill/king_of_the_hill.png)

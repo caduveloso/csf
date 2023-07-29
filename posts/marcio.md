@@ -11,7 +11,7 @@ tags:
   - music
 ---
 
-This is a logo I created for a talented video maker, capturing their creative essence in a simple yet memorable design.
+This is a logo I created for a talented video maker, capturing his creative essence in a simple yet memorable design.
 
 ![Comusic Dapp view](/images/branding/marcio/quadro.png)
 

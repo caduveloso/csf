@@ -43,8 +43,8 @@ export default function Blog({ posts }: any) {
 
   return (
 
-    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-0 md:p-4 mx-auto gap-2 bg-gradient-to-rt from-gray-300 to-gray-100'>
-      <Videos/>
+    <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 py-0 md:p-4 mx-auto gap-2 bg-gradient-to-rt from-gray-300 to-gray-100'>
+      {/* <Videos/> */}
       {posts.map(({ slug, frontmatter }: any) => (
         <div
           key={slug}

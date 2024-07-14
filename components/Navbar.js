@@ -8,7 +8,7 @@ export default function Navbar() {
 
             <div className='w-full flex-none md:flex justify-between'>
 
-                <div className='flex w-full justify-start gap-12 items-center ml-3'> {/*Left area*/}
+                <div className='flex flex-col lg:flex-row w-full justify-start gap-4 lg:gap-12 items-center ml-3'> {/*Left area*/}
 
                     <div className='flex items-baseline mb-1'>
                         <button>
@@ -17,10 +17,9 @@ export default function Navbar() {
                             </Link>
                         </button> 
                     </div>
-                    <span className='text-white w-full tracking-wider leading-6 pb-1 pl-12 border-l border-white block'>
+                    <span className='text-white w-full tracking-wider leading-none pb-1 lg:pl-12 lg:border-l border-white items-center lg:items-start flex flex-col'>
                         <span className='font-bold text-xl lg:text-2xl'>Graphic Design & web Development</span>
-                        <br/>
-                        <span className='font-thin text-xs lg:text-sm'>Curated Showcase of my Latest Work</span>
+                        <span className='font-thin text-xs lg:text-sm leading-none mt-3 lg:mt-0'>Curated Showcase of my Latest Work</span>
                     </span>
                     {/* <span className='block lg:hidden items-center gap-[2px] text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white'>
                         <span className='font-bold'>design</span> <br/> <span className='font-bold'>code</span>

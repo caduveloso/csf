@@ -8,18 +8,18 @@ export default function Navbar() {
 
             <div className='w-full flex-none md:flex justify-between'>
 
-                <div className='flex flex-col lg:flex-row w-full justify-start gap-4 lg:gap-12 items-center ml-3'> {/*Left area*/}
+                <div className='flex flex-col lg:flex-row w-full justify-start gap-2 lg:gap-12 items-center ml-3'> {/*Left area*/}
 
                     <div className='flex items-baseline mb-1'>
                         <button>
                             <Link href='/'>
-                                <span className='text-2xl lg:text-2xl text-white font-bold'>Cadu</span><span className='ml-[2px] text-2xl lg:text-2xl text-white font-thin'>Veloso</span>
+                                <span className='text-2xl lg:text-2xl text-white font-bold leading-3'>Cadu</span><span className='ml-[2px] text-2xl lg:text-2xl text-white font-thin leading-3'>Veloso</span>
                             </Link>
                         </button> 
                     </div>
                     <span className='text-white w-full tracking-wider leading-none pb-1 lg:pl-12 lg:border-l border-white items-center lg:items-start flex flex-col'>
                         <span className='font-bold text-lg lg:text-2xl text-center lg:text-left'>Graphic Design & web Development</span>
-                        <span className='font-thin text-xs lg:text-sm leading-none mt-3 lg:mt-0'>Curated Showcase of my Latest Work</span>
+                        <span className='font-thin text-xs lg:text-sm leading-none mt-2 lg:mt-0'>Curated Showcase of my Latest Work</span>
                     </span>
                     {/* <span className='block lg:hidden items-center gap-[2px] text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white'>
                         <span className='font-bold'>design</span> <br/> <span className='font-bold'>code</span>

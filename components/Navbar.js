@@ -10,7 +10,10 @@ export default function Navbar() {
 
                 <div className='flex flex-col lg:flex-row w-full justify-center lg:justify-start gap-0 lg:gap-12 items-start lg:items-center ml-0 lg:ml-3 mt-2 lg:mt-0'> {/*Left area*/}
 
-                    <div className='flex items-baseline mb-0 lg:mb-1'>
+                    <div className='flex items-center gap-4 mb-0 lg:mb-1'>
+                        {/* <div>
+                            <Image src={"/logo.png"} width={80} height={80}/>
+                        </div> */}
                         <button>
                             <Link href='/'>
                                 <span className='text-2xl lg:text-2xl text-white font-bold leading-3'>Cadu</span><span className='ml-[2px] text-2xl lg:text-2xl text-white font-thin leading-3'>Veloso</span>

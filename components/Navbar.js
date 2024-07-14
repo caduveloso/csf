@@ -18,7 +18,7 @@ export default function Navbar() {
                         </button> 
                     </div>
                     <span className='text-white w-full tracking-wider leading-none pb-1 pl-0 lg:pl-12 lg:border-l border-white items-center lg:items-start flex flex-col'>
-                        <span className='font-normal lg:font-bold text-xl lg:text-2xl text-center lg:text-left'>Graphic Design & web Development</span>
+                        <span className='font-normal lg:font-bold text-lg lg:text-2xl text-center lg:text-left'>Graphic Design & web Development</span>
                         <span className='font-thin text-xs lg:text-sm leading-none mt-2 lg:mt-0 hidden lg:block'>Curated Showcase of my Latest Work</span>
                     </span>
                     {/* <span className='block lg:hidden items-center gap-[2px] text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white'>

@@ -8,7 +8,7 @@ export default function Navbar() {
 
             <div className='w-full flex-none md:flex justify-between'>
 
-                <div className='flex flex-col lg:flex-row w-full justify-center lg:justify-start gap-1 lg:gap-12 items-center ml-0 lg:ml-3'> {/*Left area*/}
+                <div className='flex flex-col lg:flex-row w-full justify-center lg:justify-start gap-0 lg:gap-12 items-start lg:items-center ml-0 lg:ml-3 mt-1 lg:mt-0'> {/*Left area*/}
 
                     <div className='flex items-baseline mb-1'>
                         <button>
@@ -17,8 +17,8 @@ export default function Navbar() {
                             </Link>
                         </button> 
                     </div>
-                    <span className='text-white w-full tracking-wider leading-none pb-1 pl-0 lg:pl-12 lg:border-l border-white items-center lg:items-start flex flex-col'>
-                        <span className='font-normal lg:font-bold text-lg lg:text-2xl text-center lg:text-left'>Graphic Design & web Development</span>
+                    <span className='text-white w-full tracking-wider leading-none pb-1 pl-0 lg:pl-12 lg:border-l border-white items-start flex flex-col'>
+                        <span className='font-normal lg:font-bold text-base lg:text-2xl text-left lg:text-left'>Graphic Design & web Development</span>
                         <span className='font-thin text-xs lg:text-sm leading-none mt-2 lg:mt-0 hidden lg:block'>Curated Showcase of my Latest Work</span>
                     </span>
                     {/* <span className='block lg:hidden items-center gap-[2px] text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white'>

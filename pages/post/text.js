@@ -15,7 +15,7 @@ function IntroText() {
   return (
 
     <div className='bg-white border border-gray p-0 m-0 shadow-lg overflow-hidden flex flex-col'>
-        <div className='prose prose-2xl p-5 pt-10'>
+        <div className='prose prose-4xl p-5 pt-10'>
             <h2 className='title text-6xl'>Hi, my name is Carlos</h2>
             <p>I`&apos;`ve been passionate about <strong>design</strong> and <strong>programming</strong> since 2002. I graduated with a degree in Graphic Design in 2009 and have worked for various companies and public service organizations. Recently, I`&apos;`ve been focusing on helping companies in the <strong>cryptocurrency</strong> space, using my skills to contribute to their success.</p>
         </div>

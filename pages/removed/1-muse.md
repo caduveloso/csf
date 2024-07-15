@@ -1,5 +1,5 @@
 ---
-title: "Unlocking NFT Potential: Elevating UI/UX and Social Media for MUSE DAO" 
+title: "Branding, UI/UX and Social Media for MUSE DAO" 
 metaTitle: 'Selection of branding work'
 metaDesc: 'Selection of branding work'
 socialImage: images/muse.png

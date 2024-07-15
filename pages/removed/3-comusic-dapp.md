@@ -31,3 +31,27 @@ Comusic has grown into a collective of like-minded artists, supporting emerging 
 
 
 You can check the progress on [comusic.io](http://www.comusic.io)
+
+
+Over the past four years, I have dedicated myself to a range of personal projects, developing my skills in design, CSS, JavaScript, and Solidity. I enjoy studying these areas and launching my own ideas. This collection showcases my work, from UI designs to complex blockchain applications.
+
+
+
+## Comusic
+
+![Comusic project screen](/images/ui/comusic/computer1.png "Comusic project screen")
+
+Comusic is an app that enables musicians to collaborate with the community by sending pieces of music and composing together. When you upload your audio, you receive an NFT that proves your ownership and role in the composition.
+
+The app uses recent wallet abstraction methods to enhance accessibility for non-crypto users.
+
+![Comusic project screen](/images/ui/comusic/comusic1.png "Comusic project screen")
+
+![Comusic Dapp view](/images/ui/comusic/comusic_video.gif)
+
+--- ---
+
+### Others
+
+![Gamb Defi](/images/ui/gamb/teste1.png)
+![Gamb Defi](/images/ui/gamb/teste2.png)

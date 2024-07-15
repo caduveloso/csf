@@ -45,11 +45,11 @@ export default function Blog({ posts }: any) {
   return (
 
     <div>
-      <div className='prose prose-2xl px-5 py-10'>
+      <Typography className='prose prose-2xl px-5 py-10'>
         <h2 className='title text-5xl'>Hi, my name is Carlos</h2>
-        <p>I've been passionate about <strong>design</strong> and <strong>programming</strong> since 2002. I graduated with a degree in Graphic Design in 2009 and have worked for various companies and public service organizations. Recently, I've been focusing on helping companies in the <strong>cryptocurrency</strong> space, using my skills to contribute to their success.</p>
+        <p>I have been passionate about <strong>design</strong> and <strong>programming</strong> since 2002. I graduated with a degree in Graphic Design in 2009 and have worked for various companies and public service organizations. Recently, I`&apos;`ve been focusing on helping companies in the <strong>cryptocurrency</strong> space, using my skills to contribute to their success.</p>
         <p>Over the past four years, I have dedicated myself to a range of personal projects, developing my skills in design, CSS, JavaScript, and Solidity. I enjoy studying these areas and launching my own ideas. This collection showcases my work, from advertising to complex blockchain applications.</p>
-      </div>
+      </Typography>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 py-0 md:p-4 mx-auto gap-2 bg-gradient-to-rt from-gray-300 to-gray-100'>
         {/* <Videos/> */}
         {/* <IntroText/> */}

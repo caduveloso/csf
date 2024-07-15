@@ -1,7 +1,7 @@
 ---
-title: "NFT-Powered Music Collaboration Platform"
+title: "Redesign for a Crypto News website"
 metaTitle: 'Redesign for a Crypto News website'
-metaDesc: 'Comusic.io Collaborative music app - design and creation'
+metaDesc: 'Redesign for a Crypto News website'
 socialImage: images/bt.png
 date: '2023-01-13'
 tags:
@@ -11,7 +11,8 @@ tags:
   - music
 ---
 
-Comusic is an app that enables musicians to collaborate with the community by sending pieces of music and composing together. When you upload your audio, you receive an NFT that proves your ownership and role in the composition.
+Bullish Times is a leading source for Cryptocurrency, NFT, and Web 3 Tech News, dedicated to providing up-to-date information in the crypto sector. In 2023, I was invited to redesign their portal and logo.
+
 
 ![Bullish Times](/images/branding/bullishtimes/site.png "Bullish website redesign")
 ![Bullish Times](/images/branding/bullishtimes/site2.png "Bullish website redesign")

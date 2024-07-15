@@ -45,7 +45,7 @@ export default function Blog({ posts }: any) {
     <div>
       <div className='max-w-[1000px] px-5 py-10'>
         <h2 className='title text-5xl'>Hi, my name is Carlos</h2>
-        <div className='flex flex-col gap-4 mt-10 text-2xl leading-10'>
+        <div className='flex flex-col gap-4 mt-10 text-xl leading-9'>
           <p className=''>I have been passionate about <strong>design</strong> and <strong>programming</strong> since 2002. I graduated with a degree in Graphic Design in 2009 and have worked for various companies and public service organizations. Recently, I&apos;ve been focusing on helping companies in the <strong>cryptocurrency</strong> space, using my skills to contribute to their success.</p>
           <p className='mt-0'>Over the past four years, I have dedicated myself to a range of personal projects, developing my skills in design, CSS, JavaScript, and Solidity. I enjoy studying these areas and launching my own ideas. This collection showcases my work, from advertising to complex blockchain applications.</p>
         </div>

@@ -32,7 +32,7 @@ export default function Navbar() {
 
 
 
-                <div className='justify-start md:justify-end items-start md:pt-0 hidden md:flex'> {/*Right area*/}
+                <div className='justify-start md:justify-end items-start md:pt-0 hidden'> {/*Right area*/}
 
                     <ul className='flex gap-4 text-gray-100 text-xs tracking-widest font-semibold uppercase'> 
                         <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">About</Link></li> 

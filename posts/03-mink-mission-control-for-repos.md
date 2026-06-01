@@ -3,7 +3,7 @@ title: "Mink: A Mission-Control Panel for a Fleet of Repos"
 dek: "When one person runs dozens of projects, the bottleneck stops being code and becomes context-switching. Mink is the control tower I built to fix that."
 category: "Agent Infrastructure"
 date: "2026-05-29"
-accent: "#2563eb"
+accent: "#54667a"
 glyph: "⌘"
 repo: "mink-3000-cli"
 stack: ["TypeScript", "CLI", "Git", "Agents"]

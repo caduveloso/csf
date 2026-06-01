@@ -3,7 +3,7 @@ title: "A Task Board That Agents Can Read and Write"
 dek: "The interface between a human and a fleet of agents shouldn't be a chat log. It should be a board — shared state both sides can see and move."
 category: "Agent Infrastructure"
 date: "2026-05-26"
-accent: "#4338ca"
+accent: "#4f6072"
 glyph: "▦"
 repo: "task-board-engine"
 stack: ["TypeScript", "State engine", "Agents", "Kanban"]

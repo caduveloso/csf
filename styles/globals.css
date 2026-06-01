@@ -1,34 +1,34 @@
 /* ──────────────────────────────────────────────────────────────
-   Field Notes — a small design system for an AI experiments journal
-   Type: Inter (interface) · Newsreader (prose) · JetBrains Mono (signal)
-   Fonts load at runtime, so an offline build still renders with the
-   system fallbacks defined in the stacks below.
+   Field Notes — a warm, minimal editorial system
+   Type: Fraunces (display serif) · Newsreader (reading serif) ·
+         Inter (labels/UI) · JetBrains Mono (code only)
+   Motion: scroll-reveal via [data-reveal] (see components/Reveal.js)
    ────────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,opt@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  /* paper & ink */
-  --paper: #faf9f6;
-  --paper-2: #f3f1ea;
-  --card: #ffffff;
-  --ink: #16161a;
-  --ink-soft: #3f3f46;
-  --muted: #71717a;
-  --faint: #a1a1aa;
-  --line: #e6e3da;
-  --line-strong: #d9d5c9;
+  /* warm paper & ink (off-white, never pure white) */
+  --paper: #f4f2ec;
+  --paper-2: #ebe7dc;
+  --card: #fbfaf5;
+  --ink: #211f1a;
+  --ink-soft: #45413a;
+  --muted: #7a756b;
+  --faint: #aaa493;
+  --line: #e3ddd0;
+  --line-strong: #d4ccbb;
 
-  /* primary brand signal */
-  --accent: #5b4fe9;
+  /* clay accent — calm, warm, no electric purple */
+  --accent: #b65b3c;
 
-  /* type */
-  --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --serif: 'Newsreader', ui-serif, Georgia, Cambria, 'Times New Roman', serif;
-  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --serif-display: 'Fraunces', ui-serif, Georgia, 'Times New Roman', serif;
+  --serif-text: 'Newsreader', ui-serif, Georgia, Cambria, serif;
+  --sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 }
 
 * { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
@@ -39,38 +39,39 @@ html, body {
   font-family: var(--sans);
 }
 
-::selection { background: color-mix(in srgb, var(--accent) 22%, transparent); }
+::selection { background: color-mix(in srgb, var(--accent) 20%, transparent); }
 
-/* ── utility primitives ─────────────────────────────────────── */
+/* ── primitives ─────────────────────────────────────────────── */
 .font-mono { font-family: var(--mono); }
-.font-serif-prose { font-family: var(--serif); }
+.font-display { font-family: var(--serif-display); }
+.font-text { font-family: var(--serif-text); }
 
 .eyebrow {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 11px;
-  letter-spacing: 0.18em;
+  font-weight: 500;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
 .display {
-  font-family: var(--sans);
-  font-weight: 800;
-  letter-spacing: -0.03em;
-  line-height: 1.02;
+  font-family: var(--serif-display);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  line-height: 1.04;
 }
-
-.hairline { border-color: var(--line); }
 
 .chip {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  font-family: var(--mono);
+  gap: 7px;
+  font-family: var(--sans);
   font-size: 11px;
-  letter-spacing: 0.04em;
+  font-weight: 500;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 9px;
+  padding: 4px 11px;
   border-radius: 999px;
   border: 1px solid var(--line-strong);
   color: var(--ink-soft);
@@ -84,83 +85,90 @@ html, body {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0% 1.5px;
-  transition: background-size .25s ease;
+  background-size: 0% 1px;
+  transition: background-size .3s ease;
 }
-.link-underline:hover { background-size: 100% 1.5px; }
+.link-underline:hover { background-size: 100% 1px; }
 
-/* numbered index rows on the home feed */
 .row-rule { border-top: 1px solid var(--line); }
-.row-link { transition: background .2s ease, padding .2s ease; }
-.row-link:hover { background: var(--paper-2); }
+.row-link { transition: background .25s ease; }
+.row-link:hover { background: var(--card); }
 
-/* generated cover field */
+/* ── generated cover (light, minimal) ───────────────────────── */
 .cover-field {
   position: relative;
   overflow: hidden;
   isolation: isolate;
+  background: var(--card);
 }
-.cover-grid {
+.cover-dots {
   position: absolute; inset: 0;
-  background-image:
-    linear-gradient(to right, rgba(0,0,0,.05) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0,0,0,.05) 1px, transparent 1px);
-  background-size: 28px 28px;
-  mask-image: radial-gradient(120% 120% at 50% 0%, #000 35%, transparent 75%);
+  background-image: radial-gradient(var(--line-strong) 1px, transparent 1.4px);
+  background-size: 22px 22px;
+  opacity: 0.5;
   z-index: -1;
 }
 
-/* ── PROSE: the editorial reading system ────────────────────── */
-.prose-editorial {
-  font-family: var(--serif);
-  color: var(--ink-soft);
-  font-size: 1.225rem;
-  line-height: 1.78;
-  max-width: 44rem;
+/* ── MOTION: scroll reveal (anime.js-style, dependency-free) ── */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity .8s cubic-bezier(.2,.7,.2,1),
+              transform .8s cubic-bezier(.2,.7,.2,1);
+  will-change: opacity, transform;
 }
-.prose-editorial > * + * { margin-top: 1.35em; }
+[data-reveal].is-in { opacity: 1; transform: none; }
 
+/* SVG line-drawing on reveal (paths use pathLength="1") */
+.draw [data-draw] {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  transition: stroke-dashoffset 1.4s cubic-bezier(.6,.1,.2,1);
+}
+.draw.is-in [data-draw] { stroke-dashoffset: 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal], .draw [data-draw] {
+    opacity: 1 !important;
+    transform: none !important;
+    stroke-dashoffset: 0 !important;
+    transition: none !important;
+  }
+}
+
+/* ── PROSE: the editorial reading system (minimal, serif) ───── */
+.prose-editorial {
+  font-family: var(--serif-text);
+  color: var(--ink-soft);
+  font-size: 1.135rem;
+  line-height: 1.75;
+  max-width: 40rem;
+}
+.prose-editorial > * + * { margin-top: 1.3em; }
+
+/* lead: a touch larger, no drop cap */
 .prose-editorial .lead {
-  font-size: 1.45rem;
-  line-height: 1.55;
+  font-size: 1.34rem;
+  line-height: 1.5;
   color: var(--ink);
   font-weight: 400;
 }
-/* drop cap on the lead */
-.prose-editorial .lead::first-letter {
-  initial-letter: 3;
-  -webkit-initial-letter: 3;
-  font-weight: 600;
-  margin-right: 0.08em;
-  color: var(--accent);
-}
 
 .prose-editorial h2 {
-  font-family: var(--sans);
-  font-weight: 800;
-  letter-spacing: -0.025em;
+  font-family: var(--serif-display);
+  font-weight: 500;
+  letter-spacing: -0.01em;
   font-size: 1.7rem;
-  line-height: 1.15;
+  line-height: 1.18;
   color: var(--ink);
-  margin-top: 2.6em;
-  margin-bottom: 0.2em;
+  margin-top: 2.7em;
+  margin-bottom: 0.15em;
   scroll-margin-top: 6rem;
 }
-.prose-editorial h2::before {
-  content: "";
-  display: block;
-  width: 34px;
-  height: 3px;
-  border-radius: 2px;
-  background: var(--accent);
-  margin-bottom: 0.7rem;
-  opacity: 0.85;
-}
 .prose-editorial h3 {
-  font-family: var(--sans);
-  font-weight: 700;
-  letter-spacing: -0.015em;
-  font-size: 1.28rem;
+  font-family: var(--serif-display);
+  font-weight: 500;
+  font-size: 1.3rem;
   color: var(--ink);
   margin-top: 2em;
   margin-bottom: 0.1em;
@@ -169,7 +177,7 @@ html, body {
 .prose-editorial a {
   color: var(--ink);
   text-decoration: none;
-  border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 45%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 55%, transparent);
   transition: border-color .2s ease, color .2s ease;
 }
 .prose-editorial a:hover { color: var(--accent); border-color: var(--accent); }
@@ -180,43 +188,39 @@ html, body {
 .prose-editorial ul, .prose-editorial ol { padding-left: 1.3em; }
 .prose-editorial li { margin-top: 0.5em; }
 .prose-editorial ul > li::marker { color: var(--accent); }
-.prose-editorial ol > li::marker { color: var(--muted); font-family: var(--mono); font-size: 0.85em; }
+.prose-editorial ol > li::marker { color: var(--muted); font-variant-numeric: tabular-nums; }
 
 .prose-editorial blockquote {
-  font-family: var(--serif);
+  font-family: var(--serif-display);
   font-style: italic;
   font-size: 1.3rem;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--ink);
-  border-left: 3px solid var(--accent);
+  border-left: 2px solid var(--accent);
   padding-left: 1.1em;
   margin-left: 0;
 }
 
-/* inline + block code */
 .prose-editorial code {
   font-family: var(--mono);
-  font-size: 0.82em;
+  font-size: 0.8em;
   background: var(--paper-2);
   border: 1px solid var(--line);
-  padding: 0.12em 0.4em;
+  padding: 0.1em 0.4em;
   border-radius: 5px;
-  color: #4338ca;
+  color: #8a4730;
 }
 .prose-editorial pre {
   font-family: var(--mono);
-  font-size: 0.86rem;
-  line-height: 1.6;
-  background: #15151b;
-  color: #e7e7ea;
-  border: 1px solid #26262e;
+  font-size: 0.84rem;
+  line-height: 1.65;
+  background: #221f1a;
+  color: #ece7dd;
   border-radius: 12px;
   padding: 1.1rem 1.2rem;
   overflow-x: auto;
 }
-.prose-editorial pre code {
-  background: transparent; border: 0; padding: 0; color: inherit; font-size: inherit;
-}
+.prose-editorial pre code { background: transparent; border: 0; padding: 0; color: inherit; font-size: inherit; }
 
 .prose-editorial img {
   border-radius: 12px;
@@ -226,52 +230,127 @@ html, body {
 
 .prose-editorial hr {
   border: 0;
-  margin: 2.6em 0;
+  margin: 2.8em 0;
   text-align: center;
 }
 .prose-editorial hr::before {
   content: "✳";
   color: var(--faint);
-  font-size: 1rem;
+  font-size: 0.95rem;
   letter-spacing: 0.6em;
 }
 
-/* callout — written as <div class="callout"> … </div> in markdown */
+/* callout */
 .prose-editorial .callout {
   font-family: var(--sans);
   font-size: 1rem;
   line-height: 1.6;
   background: var(--card);
   border: 1px solid var(--line-strong);
-  border-left: 3px solid var(--accent);
+  border-left: 2px solid var(--accent);
   border-radius: 12px;
   padding: 1.05rem 1.2rem;
   color: var(--ink-soft);
 }
 .prose-editorial .callout strong { color: var(--ink); }
 .prose-editorial .callout .label {
-  font-family: var(--mono);
+  font-family: var(--sans);
   font-size: 10.5px;
-  letter-spacing: 0.16em;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
   display: block;
   margin-bottom: 0.35rem;
 }
 
-/* small caption under figures */
 .prose-editorial figcaption,
 .prose-editorial .caption {
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.02em;
+  font-family: var(--sans);
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
   color: var(--muted);
   text-align: center;
-  margin-top: 0.6rem;
+  margin-top: 0.7rem;
+}
+
+/* ── FIGURES & DIAGRAMS (infographic, minimal line-art) ─────── */
+.figure-block {
+  margin: 2.4em 0;
+}
+.figure-block .frame {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.6rem 1.4rem;
+}
+.diagram { width: 100%; height: auto; display: block; }
+.diagram text { font-family: var(--sans); fill: var(--ink-soft); }
+.diagram .d-label { font-size: 13px; font-weight: 500; }
+.diagram .d-sub { font-size: 11px; fill: var(--muted); }
+.diagram .d-stroke { stroke: var(--ink); fill: none; stroke-width: 1.5; }
+.diagram .d-accent { stroke: var(--accent); }
+.diagram .d-fill-accent { fill: var(--accent); }
+.diagram .d-soft { stroke: var(--line-strong); }
+
+/* ── SCROLLYTELLING (sticky figure + stepped text) ──────────── */
+.scrolly {
+  --w: min(58rem, 90vw);
+  width: var(--w);
+  margin: 3rem 0;
+  margin-left: calc((100% - var(--w)) / 2);  /* center, even when wider than column */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+.scrolly-figure {
+  position: sticky;
+  top: 14vh;
+  align-self: start;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 1.4rem;
+}
+.scrolly-step {
+  font-family: var(--serif-text);
+  color: var(--muted);
+  padding: 1.1rem 1.2rem;
+  border-left: 2px solid var(--line);
+  border-radius: 0 10px 10px 0;
+  transition: color .35s ease, border-color .35s ease, background .35s ease;
+}
+.scrolly-step.active {
+  color: var(--ink);
+  border-color: var(--accent);
+  background: var(--card);
+}
+.scrolly-step .n {
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.3rem;
+}
+/* figure parts dim unless their step is active */
+.scrolly-figure [data-part] { opacity: 0.18; transition: opacity .4s ease; }
+.scrolly-figure[data-active="1"] [data-part="1"],
+.scrolly-figure[data-active="2"] [data-part="2"],
+.scrolly-figure[data-active="3"] [data-part="3"],
+.scrolly-figure[data-active="4"] [data-part="4"],
+.scrolly-figure[data-active="5"] [data-part="5"] { opacity: 1; }
+
+@media (min-width: 860px) {
+  .scrolly { grid-template-columns: 1.05fr 0.95fr; align-items: start; }
+  .scrolly-figure { order: 2; }
+  .scrolly-steps { order: 1; }
+  .scrolly-step { min-height: 52vh; display: flex; flex-direction: column; justify-content: center; }
 }
 
 @media (max-width: 640px) {
-  .prose-editorial { font-size: 1.12rem; }
-  .prose-editorial .lead { font-size: 1.25rem; }
+  .prose-editorial { font-size: 1.06rem; }
+  .prose-editorial .lead { font-size: 1.18rem; }
   .prose-editorial h2 { font-size: 1.45rem; }
 }

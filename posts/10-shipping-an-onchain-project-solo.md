@@ -3,7 +3,7 @@ title: "Regular Punks: Shipping an On-Chain Project, Solo"
 dek: "Contracts, a subgraph, a mint page, staking, snapshots, allowlists, a game. One person can now hold an entire web3 product in their head — if they let agents hold the parts."
 category: "Shipping"
 date: "2026-02-14"
-accent: "#e11d48"
+accent: "#9e4b43"
 glyph: "◈"
 repo: "regular-punks-game"
 stack: ["Solidity", "TypeScript", "The Graph", "Next.js"]

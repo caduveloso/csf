@@ -3,7 +3,7 @@ title: "An Agent That Practices With You"
 dek: "Most music AI tries to replace the musician. I wanted the opposite — a partner that listens, responds, and makes practising alone feel less alone."
 category: "Audio & Music"
 date: "2026-05-25"
-accent: "#ea580c"
+accent: "#a96a25"
 glyph: "∿"
 repo: "improvisApp"
 stack: ["TypeScript", "MIDI", "Real-time", "LLM"]

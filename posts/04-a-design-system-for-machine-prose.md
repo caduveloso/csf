@@ -3,7 +3,7 @@ title: "A Design System for Machine-Written Prose"
 dek: "Agents produce oceans of Markdown. Almost all of it is rendered ugly. This is the case for treating AI prose as a first-class design problem."
 category: "Craft"
 date: "2026-05-22"
-accent: "#0d9488"
+accent: "#2f6e63"
 glyph: "¶"
 repo: "md-render"
 stack: ["HTML", "CSS", "Typography", "Markdown"]

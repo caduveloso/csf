@@ -1,8 +1,7 @@
-// A generated cover: no raster images, just a designed field built from the
-// post's accent colour, glyph and index. Keeps the whole journal self-contained
-// and gives every experiment a consistent, intentional visual identity.
+// Generated cover — light, warm, minimal. No raster images: a quiet dotted
+// field, a large serif glyph in the post's accent, and a small index.
 export default function Cover({
-  accent = '#5b4fe9',
+  accent = '#b65b3c',
   glyph = '✳',
   index = 1,
   category = '',
@@ -17,36 +16,32 @@ export default function Cover({
         tall ? 'h-full' : 'aspect-[16/10]'
       }`}
       style={{
-        background: `radial-gradient(120% 140% at 18% 0%, ${accent}26 0%, transparent 55%), radial-gradient(120% 120% at 100% 100%, ${accent}1f 0%, transparent 50%), #15151b`,
+        background: `radial-gradient(130% 130% at 20% 0%, ${accent}14 0%, transparent 60%), var(--card)`,
       }}
     >
-      <div className="cover-grid" />
+      <div className="cover-dots" />
 
-      {/* big faint glyph */}
       <span
         aria-hidden
-        className="select-none leading-none"
+        className="select-none font-display leading-none"
         style={{
-          fontSize: tall ? '12rem' : '5.5rem',
+          fontSize: tall ? '9rem' : '4.6rem',
           color: accent,
-          opacity: 0.92,
-          textShadow: `0 0 60px ${accent}66`,
+          opacity: 0.9,
         }}
       >
         {glyph}
       </span>
 
-      {/* corner index */}
       <span
-        className="absolute left-4 top-4 font-mono text-[11px] tracking-[0.2em]"
-        style={{ color: `${accent}` }}
+        className="absolute left-4 top-4 font-mono text-[11px] tracking-[0.18em]"
+        style={{ color: accent }}
       >
         №{idx}
       </span>
 
-      {/* corner category */}
       {category ? (
-        <span className="absolute bottom-4 right-4 font-mono text-[10px] uppercase tracking-[0.18em] text-white/55">
+        <span className="eyebrow absolute bottom-4 right-4 !text-[10px]">
           {category}
         </span>
       ) : null}

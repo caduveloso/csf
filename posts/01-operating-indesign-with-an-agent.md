@@ -3,7 +3,7 @@ title: "Teaching an Agent to Operate InDesign"
 dek: "How a language model learned to drive professional page-layout software — and produce documents that actually look designed."
 category: "Agentic Design"
 date: "2026-05-21"
-accent: "#7c3aed"
+accent: "#b65b3c"
 glyph: "❖"
 repo: "text-to-indesign-skill"
 stack: ["TypeScript", "InDesign Scripting", "Claude", "Design tokens"]

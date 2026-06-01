@@ -3,7 +3,7 @@ title: "The Reusable Knowledge Avatar"
 dek: "A chatbot that actually knows your material is mostly a retrieval problem wearing a conversation costume. Here's the reusable shape I keep reaching for."
 category: "Agent Infrastructure"
 date: "2026-05-10"
-accent: "#0284c7"
+accent: "#5d7088"
 glyph: "◍"
 repo: "avatar-knowledge-base"
 stack: ["TypeScript", "RAG", "Embeddings", "LLM"]

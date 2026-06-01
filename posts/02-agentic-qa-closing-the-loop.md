@@ -3,7 +3,7 @@ title: "Agentic QA: Closing the Loop on Generated Design"
 dek: "Generation is the easy half. The interesting work is a second agent that looks at the result, compares it to the spec, and sends it back to be fixed."
 category: "Agentic Design"
 date: "2026-05-18"
-accent: "#4f46e5"
+accent: "#9c4e34"
 glyph: "⊚"
 repo: "design-system"
 stack: ["TypeScript", "Vision models", "PDF render", "Rubrics"]

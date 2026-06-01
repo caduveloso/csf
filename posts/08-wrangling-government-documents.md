@@ -3,7 +3,7 @@ title: "Wrangling Messy Government Documents with Agents"
 dek: "Real-world data doesn't arrive as clean JSON. It arrives as scanned PDFs, broken portals, and inconsistent forms. This is the unglamorous pipeline that tames it."
 category: "Document Intelligence"
 date: "2026-04-30"
-accent: "#059669"
+accent: "#5c7355"
 glyph: "▤"
 repo: "inclusao-salic"
 stack: ["TypeScript", "Scraping", "PDF", "LLM extraction"]

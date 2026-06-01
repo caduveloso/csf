@@ -1,50 +1,45 @@
-import Image from 'next/image'
 import Link from 'next/link';
 
 export default function Navbar() {
-    return (
+  return (
+    <header className="sticky top-0 z-30 border-b border-line bg-paper/80 backdrop-blur-md">
+      <div className="mx-auto flex max-w-page items-center justify-between px-5 py-4 sm:px-8">
+        <Link href="/" className="group flex items-center gap-3">
+          <span className="flex h-8 w-8 items-center justify-center rounded-md bg-ink text-paper font-mono text-sm font-bold">
+            cv
+          </span>
+          <span className="leading-none">
+            <span className="block text-[15px] font-bold tracking-tight text-ink">
+              Cadu Veloso
+            </span>
+            <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-muted">
+              Field Notes
+            </span>
+          </span>
+        </Link>
 
-        <div className='sticky items-center top-0 flex py-6 lg:py-4 pl-4 pr-6 lg:h-24 bg-black bg-opacity-90 z-10'>
-
-            <div className='w-full flex-none md:flex justify-between'>
-
-                <div className='flex flex-col lg:flex-row w-full justify-center lg:justify-start gap-0 lg:gap-12 items-start lg:items-center ml-0 lg:ml-3 mt-2 lg:mt-0'> {/*Left area*/}
-
-                    <div className='flex items-center gap-4 mb-0 lg:mb-1'>
-                        {/* <div>
-                            <Image src={"/logo.png"} width={80} height={80}/>
-                        </div> */}
-                        <button>
-                            <Link href='/'>
-                                <span className='text-2xl lg:text-2xl text-white font-bold leading-3'>Cadu</span><span className='ml-[2px] text-2xl lg:text-2xl text-white font-thin leading-3'>Veloso</span>
-                            </Link>
-                        </button> 
-                    </div>
-                    <span className='text-white w-full tracking-wider leading-none pb-1 pl-0 lg:pl-12 lg:border-l border-white items-start flex flex-col'>
-                        <span className='font-normal lg:font-bold text-base lg:text-2xl text-left lg:text-left'>Graphic Design & Web Development</span>
-                        <span className='font-thin text-xs lg:text-sm leading-none mt-2 lg:mt-0 hidden lg:block'>Curated Showcase of my Latest Work</span>
-                    </span>
-                    {/* <span className='block lg:hidden items-center gap-[2px] text-white text-xs w-full tracking-wider leading-4 pb-1 pl-5 border-l border-white'>
-                        <span className='font-bold'>design</span> <br/> <span className='font-bold'>code</span>
-                    </span> */}
-
-                </div>
-
-
-
-                <div className='justify-start md:justify-end items-start md:pt-0 hidden'> {/*Right area*/}
-
-                    <ul className='flex gap-4 text-gray-100 text-xs tracking-widest font-semibold uppercase'> 
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">About</Link></li> 
-                        <li className='hover:underline underline-offset-8 hover:text-white'><Link href="/">Contact</Link></li>
-                    </ul>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    );
+        <nav className="flex items-center gap-5 font-mono text-[11px] uppercase tracking-[0.14em] text-muted">
+          <Link href="/" className="link-underline hover:text-ink">
+            Experiments
+          </Link>
+          <a
+            href="https://github.com/caduveloso"
+            target="_blank"
+            rel="noreferrer"
+            className="link-underline hover:text-ink"
+          >
+            GitHub
+          </a>
+          <a
+            href="https://x.com/codeveloso"
+            target="_blank"
+            rel="noreferrer"
+            className="hidden link-underline hover:text-ink sm:inline"
+          >
+            X
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
 }
-

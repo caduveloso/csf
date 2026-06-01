@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Field Notes — Cadu Veloso
 
-## Getting Started
+A working journal of experiments in **agentic design, audio, and software**. Not a
+traditional portfolio: each entry is one experiment, written to be educative — the
+idea, the architecture, what broke, and the pattern worth reusing.
 
-First, run the development server:
+Built with Next.js (pages router), Tailwind, and a small custom prose design system.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Selected experiments
+
+- **Teaching an Agent to Operate InDesign** — driving professional page-layout
+  software with a model, constrained by a design system.
+- **Agentic QA** — a second agent that renders the artifact, judges it against a
+  rubric, and sends it back to be fixed.
+- **Mink** — a mission-control CLI for running a fleet of repos from one panel.
+- **A Design System for Machine-Written Prose** — treating AI output as a
+  first-class typographic problem (this site's own prose system).
+- ...and more across audio-to-notation, knowledge avatars, document
+  intelligence, agent-readable task boards, and shipping on-chain solo.
+
+## Structure
+
+```
+pages/
+  index.tsx          # editorial home: hero + featured + numbered index
+  post/[slug].js     # article layout wrapping the prose design system
+components/
+  Navbar / Footer / Layout
+  Cover.js           # generated, image-free cover art per experiment
+posts/*.md           # one Markdown file per experiment (front-matter driven)
+styles/globals.css   # the design system: type, tokens, prose-editorial
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Each post is a Markdown file with front-matter: `title`, `dek`, `category`,
+`accent`, `glyph`, `repo`, `stack`, `readingTime`, `featured`, `order`, `tags`.
+Covers are generated from `accent` + `glyph` — no image assets required.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Getting started
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build (statically generates every experiment)
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Adding an experiment
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Drop a new `posts/NN-slug.md` file with the front-matter above. It appears in the
+index automatically, ordered by `order`, and gets its own statically generated page.

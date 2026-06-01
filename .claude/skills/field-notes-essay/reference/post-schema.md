@@ -13,7 +13,7 @@ title: "Title Case, a Real Sentence Not a Slogan"
 dek: "One sentence — the promise of the piece. Shown under the title and in the index."
 category: "Agent Infrastructure"        # must be one of the categories below
 date: "2026-06-01"                       # YYYY-MM-DD, today
-accent: "#2563eb"                        # hex; must match the category (see map)
+accent: "#54667a"                        # hex; must match the category (see map)
 glyph: "⌘"                               # one unicode symbol, not already used
 repo: "mink-3000-cli"                    # source repo name, shown as a label (not a link)
 stack: ["TypeScript", "CLI", "Agents"]   # 2–5 short tokens
@@ -30,20 +30,23 @@ tags:
 
 ## Categories → accent
 
-Reuse an existing category when it fits. Each has a primary accent; the listed
-variants are fine when you want sibling posts to differ slightly.
+The palette is **warm and muted** (earth tones — no electric/neon colors, no
+purple). Reuse an existing category when it fits. Each has a primary accent; the
+listed variants are fine when you want sibling posts to differ slightly.
 
 | Category               | Primary accent | Variants used        | Feel                         |
 |------------------------|----------------|----------------------|------------------------------|
-| Agentic Design         | `#7c3aed`      | `#4f46e5`            | agents producing design/docs |
-| Agent Infrastructure   | `#2563eb`      | `#0284c7`, `#4338ca` | tooling, orchestration, RAG  |
-| Craft                  | `#0d9488`      | —                    | typography, taste, systems   |
-| Audio & Music          | `#d97706`      | `#ea580c`            | sound, MIDI, notation        |
-| Document Intelligence  | `#059669`      | —                    | extraction, scraping, OCR    |
-| Shipping               | `#e11d48`      | —                    | end-to-end builds, web3      |
+| Agentic Design         | `#b65b3c` clay | `#9c4e34`            | agents producing design/docs |
+| Agent Infrastructure   | `#54667a` slate| `#5d7088`, `#4f6072` | tooling, orchestration, RAG  |
+| Craft                  | `#2f6e63` pine | —                    | typography, taste, systems   |
+| Audio & Music          | `#b5832e` ochre| `#a96a25`            | sound, MIDI, notation        |
+| Document Intelligence  | `#5c7355` sage | —                    | extraction, scraping, OCR    |
+| Shipping               | `#9e4b43` brick| —                    | end-to-end builds, web3      |
 
-If a genuinely new theme appears, you may add a category — pick a distinct,
-tasteful accent (Tailwind 600-level colors work well) and stay consistent.
+`#b65b3c` (clay) is the site's primary accent. If a genuinely new theme appears,
+you may add a category — pick a **muted, earthy** tone that sits next to these
+(think clay, ochre, sage, slate, pine, terracotta — desaturated, warm). Avoid
+bright or saturated hues; they fight the warm-paper aesthetic.
 
 ## Glyphs already in use (pick a different one)
 

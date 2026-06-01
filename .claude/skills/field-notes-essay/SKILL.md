@@ -76,11 +76,16 @@ educative, no hype.
 ## 5 · Media — only if it earns its place
 
 Read `reference/media.md`. The site gives every post a **generated cover for
-free**, so a post needs *no* image to look finished. Add media only when a figure,
-diagram, screenshot, or short clip genuinely helps the reader. If you do, place
-assets under the portfolio's `public/images/<slug>/` or `public/videos/<slug>/` and
-embed them per that reference. Use whatever image/video generation tools are
-available in the session; if none are, ask the user for an asset or skip it.
+free**, so a post needs *no* image to look finished. Add a visual only when it does
+real work for the reader. The house style, in order of preference: **inline SVG
+line-art diagrams**, then a **scrollytelling block** (a sticky figure that lights up
+stage-by-stage as you scroll — great for anything with phases), then self-hosted
+video, then raster images. Diagrams/scrolly need no asset files, stay crisp, and
+animate themselves — copy a working example from
+`posts/05-from-audio-to-notation.md`. For video/images, place assets under
+`public/videos/<slug>/` or `public/images/<slug>/`; use whatever generation tools
+the session offers, and if none are available, skip the visual rather than ship a
+broken path. Recolour everything with the theme tokens — never hard-code a hex.
 
 ## 6 · Write, validate, publish
 

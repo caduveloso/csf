@@ -23,11 +23,15 @@ The premise was simple to state and hard to do: give a language model a brief �
 
 ## Why not just generate a PDF?
 
+<div class="aside-note">Print reaches for a hundred niceties — hanging punctuation, optical margins, true baseline grids — that flattened HTML never bothers with. Closing that gap is the whole point.</div>
+
 The temptation is to skip InDesign entirely. Render some styled HTML, print to PDF, ship it. I tried that first, and the output always had the same tell: it looked like a *web page that had been flattened*, not like a document that had been *set*. No hanging punctuation, no real grid, captions that drifted, widows and orphans everywhere.
 
 InDesign is the opposite. It is opinionated about typography in exactly the ways that make print look expensive. The catch is that all of that lives behind a GUI. So the real question became: **what is the agent's keyboard?**
 
 ## The agent's keyboard: scripting, not clicking
+
+<div class="aside-note">The model never touches a mouse. Its “keyboard” is the scripting API — every move it makes is a function call a human could read and audit.</div>
 
 InDesign exposes an automation surface — an ExtendScript / UXP scripting API — that can do essentially everything the UI can: create documents, define paragraph and character styles, place frames, flow text, apply master pages, export PDF. That API is the agent's keyboard.
 
@@ -51,6 +55,8 @@ This split matters more than it looks. Models are wonderful at structure and int
 ## The design system is the guardrail
 
 A blank canvas is the enemy. If you let an agent choose any font at any size, it will — and the result is a ransom note. The fix was to never give it a blank canvas.
+
+<div class="aside-note">A token like <code>body</code> packs a dozen typographic decisions into one word — so the prompt stays short and the output stays on-brand.</div>
 
 Everything the agent is allowed to do is expressed as **design tokens**: a constrained vocabulary of type scales, spacing units, a palette, a small set of named paragraph and object styles. The model doesn't pick `19.4px`; it picks `body`. It doesn't invent a teal; it picks `accent`. The design system isn't documentation that sits beside the work — it is the *only set of moves on the board*.
 

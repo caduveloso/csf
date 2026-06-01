@@ -19,6 +19,25 @@ tags:
 
 <p class="lead">We have spent two years making models that write beautifully and then displaying that writing in a grey chat bubble with a default sans-serif at 14 pixels. The intelligence got a thousand times better; the typography stayed where it was in 2008. This experiment is a small protest against that — a design system built specifically for prose that a machine wrote.</p>
 
+<div class="specimen">
+<div class="spec-pair">
+<div class="spec-card"><div class="big font-display">Aa</div><div class="meta">Fraunces · display serif · titles &amp; headings</div></div>
+<div class="spec-card"><div class="big font-text">Aa</div><div class="meta">Newsreader · text serif · the reading voice</div></div>
+</div>
+<div class="scale">
+<div class="row"><span class="lab">Display</span><span class="font-display" style="font-size:2rem">Reading is a designed act</span></div>
+<div class="row"><span class="lab">Heading</span><span class="font-display" style="font-size:1.35rem">A token for every node</span></div>
+<div class="row"><span class="lab">Body</span><span class="font-text" style="font-size:1.05rem">A measure of about sixty-five characters.</span></div>
+<div class="row"><span class="lab">Signal</span><span class="font-mono" style="font-size:0.8rem">const node = ast.heading</span></div>
+</div>
+<div class="swatches">
+<div class="sw"><div class="chip2" style="background:#f4f2ec"></div><div class="nm">paper #f4f2ec</div></div>
+<div class="sw"><div class="chip2" style="background:#211f1a"></div><div class="nm">ink #211f1a</div></div>
+<div class="sw"><div class="chip2" style="background:#2f6e63"></div><div class="nm">accent #2f6e63</div></div>
+<div class="sw"><div class="chip2" style="background:#e3ddd0"></div><div class="nm">line #e3ddd0</div></div>
+</div>
+</div>
+
 The trigger was mundane. I was generating long, structured documents with agents — reports, briefs, notes — and every renderer I reached for made them look like a README. Functional. Joyless. Forgettable. The words deserved better, so I built a system to set them properly. The page you're reading is its descendant.
 
 ## Reading is a designed act

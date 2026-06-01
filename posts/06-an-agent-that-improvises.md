@@ -19,6 +19,17 @@ tags:
 
 <p class="lead">There's a specific loneliness to practising an instrument. The metronome doesn't care. The backing track doesn't listen. You play a phrase, and nothing answers it. This experiment started from a question: what would it take for a machine to be a <em>musical partner</em> rather than a musical product — something that hears what you play and plays something back?</p>
 
+<div class="exchange">
+<div class="turn you"><span class="who">You play</span>A rising phrase in D minor — a question, left hanging.</div>
+<div class="turn agent"><span class="who">Agent answers</span>A descending reply that resolves it, landing right on the beat.</div>
+<div class="turn you"><span class="who">You play</span>The same motif, displaced — pushing the energy upward.</div>
+<div class="turn agent"><span class="who">Agent answers</span>It echoes the motif back, transformed, and holds the tension.</div>
+</div>
+<div class="meter">
+<div class="track"><div class="fill" style="width:18%"></div></div>
+<span class="lab">latency budget — a reply two bars late isn't a reply, it's an interruption</span>
+</div>
+
 ## Replacement versus accompaniment
 
 A lot of generative music aims to produce a finished piece — press a button, receive a song. That's a fine goal, but it's not the one that excites me. I'm more interested in the *call and response* — the conversational core of jazz, of jamming, of a teacher trading fours with a student. That framing changes every design decision.

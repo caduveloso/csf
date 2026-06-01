@@ -19,6 +19,25 @@ tags:
 
 <p class="lead">At some point my GitHub stopped looking like a portfolio and started looking like a fleet. Contracts here, a subgraph there, three frontends, a scraper, a music tool, a document pipeline. Each one a separate repo, separate branch, separate half-loaded mental model. The work wasn't hard. The <em>switching</em> was. Mink is the panel I built to run the whole fleet from one place.</p>
 
+<div class="terminal bleed">
+<div class="bar"><i style="background:#e06c5a"></i><i style="background:#e0b341"></i><i style="background:#5fae6b"></i><span class="t">mink — fleet control</span></div>
+<pre><span class="mut"># one command, the true state of every repo</span>
+$ mink status
+  mink-3000-cli        main      <span class="ok">✔ clean</span>
+  design-system        main      <span class="acc">● 2 ahead</span>
+  text-to-indesign     feat/qa   <span class="warn">✎ dirty</span>
+  audio-to-sheet       main      <span class="warn">⤓ behind origin</span>
+  regular-punks-game   main      <span class="ok">✔ clean</span>
+<span class="mut"># aim one instruction at many repos at once</span>
+$ mink dispatch <span class="acc">"pin node to 22, run tests"</span> --to '*'
+  → fanned out to 12 repos · each on its own branch</pre>
+</div>
+<div class="statband">
+<div class="s"><b>12</b><span>repos in the fleet</span></div>
+<div class="s"><b>1</b><span>panel to steer them</span></div>
+<div class="s"><b>0</b><span>cd-ing required</span></div>
+</div>
+
 ## The problem nobody warns you about
 
 Solo, with agents, you can suddenly maintain a dozen active projects. That sounds like leverage — and it is, until you measure where the day actually goes. It goes to overhead: `cd`-ing into a repo, remembering which branch, checking if it's dirty, pulling, reading the last thing you did, re-establishing context, then *finally* doing the work. Multiply by twelve and the real job becomes navigation.

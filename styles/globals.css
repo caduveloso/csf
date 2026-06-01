@@ -291,6 +291,7 @@ html, body {
 .diagram .d-stroke { stroke: var(--ink); fill: none; stroke-width: 1.5; }
 .diagram .d-accent { stroke: var(--accent); }
 .diagram .d-fill-accent { fill: var(--accent); }
+.diagram .d-fill-card { fill: var(--card); }
 .diagram .d-soft { stroke: var(--line-strong); }
 
 /* ── SCROLLYTELLING (sticky figure + stepped text) ──────────── */
@@ -354,3 +355,126 @@ html, body {
   .prose-editorial .lead { font-size: 1.18rem; }
   .prose-editorial h2 { font-size: 1.45rem; }
 }
+
+/* ════════════════════════════════════════════════════════════════
+   PRESENTATION MODULES — one signature treatment per experiment.
+   Each is a different way to present the same kind of content.
+   ════════════════════════════════════════════════════════════════ */
+
+/* break a block out wider than the 40rem text column (no transform) */
+.bleed {
+  --w: min(56rem, 92vw);
+  width: var(--w);
+  margin-left: calc((100% - var(--w)) / 2);
+  margin-right: calc((100% - var(--w)) / 2);
+}
+
+/* 01 · margin / aside annotations (Tufte-style) ----------------- */
+.prose-editorial .aside-note {
+  float: right;
+  clear: right;
+  width: 205px;
+  margin: 0.3em -232px 1.1rem 1.7rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--muted);
+  border-left: 2px solid var(--accent);
+  padding-left: 0.85rem;
+}
+.prose-editorial .aside-note code { font-size: 0.85em; }
+@media (max-width: 1279px) {
+  .prose-editorial .aside-note { float: none; width: auto; margin: 1.4em 0; }
+}
+
+/* 01 · 08 · before / after compare ------------------------------ */
+.compare { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin: 2.3em 0; }
+.compare .col { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 1.1rem 1.2rem; }
+.compare .col .tag { display: block; margin-bottom: 0.5rem; font: 600 10.5px/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.compare .col.bad .tag { color: #9e4b43; }
+.compare .col.good .tag { color: #2f6e63; }
+.compare .col p { margin: 0; font-family: var(--serif-text); color: var(--ink-soft); }
+@media (max-width: 640px) { .compare { grid-template-columns: 1fr; } }
+
+/* 02 · rubric checklist ----------------------------------------- */
+.checklist { margin: 2.3em 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+.checklist .ci { display: flex; align-items: center; gap: 0.8rem; padding: 0.75rem 1.05rem; border-top: 1px solid var(--line); font-family: var(--sans); font-size: 0.95rem; color: var(--ink-soft); }
+.checklist .ci:first-child { border-top: 0; }
+.checklist .ci .mark { flex: none; width: 22px; height: 22px; border-radius: 6px; display: grid; place-items: center; font-size: 12px; color: #fff; }
+.checklist .ci.pass .mark { background: #2f6e63; }
+.checklist .ci.fail .mark { background: #9e4b43; }
+
+/* 03 · terminal / dashboard panel ------------------------------- */
+.terminal { margin: 2.3em 0; border-radius: 14px; overflow: hidden; border: 1px solid #2a2722; background: #1b1916; box-shadow: 0 22px 60px -34px rgba(0,0,0,0.55); }
+.terminal .bar { display: flex; align-items: center; gap: 7px; padding: 0.6rem 0.9rem; background: #232019; border-bottom: 1px solid #2a2722; }
+.terminal .bar i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; }
+.terminal .bar .t { margin-left: 0.6rem; font: 500 11px/1 var(--mono); color: #8d8676; }
+.terminal pre { margin: 0; padding: 1.05rem 1.15rem; background: transparent; border: 0; border-radius: 0; color: #e7e2d6; font-family: var(--mono); font-size: 0.82rem; line-height: 1.75; }
+.terminal .ok { color: #9bbf7e; } .terminal .warn { color: #d8a657; } .terminal .mut { color: #7c7567; } .terminal .acc { color: #e0996f; }
+.statband { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2.3em 0; }
+.statband .s { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 1rem 1.1rem; }
+.statband .s b { display: block; font: 500 2rem/1 var(--serif-display); color: var(--ink); }
+.statband .s span { font: 500 11px/1.3 var(--sans); letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+
+/* 04 · type specimen -------------------------------------------- */
+.specimen { margin: 2.3em 0; display: grid; gap: 1rem; }
+.spec-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.spec-card { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 1.3rem; }
+.spec-card .big { font-size: 3.6rem; line-height: 1; color: var(--ink); }
+.spec-card .meta { margin-top: 0.6rem; font: 500 11px/1.4 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.scale { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 0.3rem 1.2rem; }
+.scale .row { display: flex; align-items: baseline; gap: 1rem; padding: 0.55rem 0; border-top: 1px solid var(--line); color: var(--ink); white-space: nowrap; overflow: hidden; }
+.scale .row:first-child { border-top: 0; }
+.scale .row .lab { flex: none; width: 70px; font: 500 10.5px/1 var(--mono); color: var(--muted); }
+.swatches { display: flex; gap: 0.6rem; flex-wrap: wrap; }
+.swatches .sw { flex: 1; min-width: 92px; border-radius: 12px; border: 1px solid var(--line); overflow: hidden; background: var(--card); }
+.swatches .sw .chip2 { height: 52px; }
+.swatches .sw .nm { padding: 0.5rem 0.6rem; font: 500 10.5px/1.2 var(--mono); color: var(--muted); }
+@media (max-width: 640px) { .spec-pair { grid-template-columns: 1fr; } }
+
+/* 06 · conversation / call-and-response ------------------------- */
+.exchange { margin: 2.3em 0; display: flex; flex-direction: column; gap: 0.7rem; }
+.turn { max-width: 80%; padding: 0.75rem 1rem; border-radius: 16px; font-family: var(--serif-text); font-size: 1rem; line-height: 1.5; color: var(--ink-soft); }
+.turn .who { display: block; margin-bottom: 0.35rem; font: 600 10px/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+.turn.you { align-self: flex-start; background: var(--card); border: 1px solid var(--line); border-bottom-left-radius: 4px; }
+.turn.agent { align-self: flex-end; background: color-mix(in srgb, var(--accent) 12%, var(--card)); border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line)); border-bottom-right-radius: 4px; }
+.meter { margin: 1.6em 0; }
+.meter .track { height: 10px; border-radius: 6px; background: var(--paper-2); border: 1px solid var(--line); overflow: hidden; }
+.meter .fill { height: 100%; background: var(--accent); }
+.meter .lab { display: block; margin-top: 0.45rem; font: 500 11px/1 var(--mono); color: var(--muted); }
+
+/* 07 · vertical stepper + Q&A cards ----------------------------- */
+.stepper { position: relative; margin: 2.3em 0; padding-left: 2.4rem; }
+.stepper::before { content: ""; position: absolute; left: 11px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+.stepper .st { position: relative; padding: 0.1rem 0 1.5rem; }
+.stepper .st:last-child { padding-bottom: 0; }
+.stepper .st .dot { position: absolute; left: -2.4rem; top: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--card); border: 2px solid var(--accent); color: var(--accent); font: 600 11px/22px var(--mono); text-align: center; }
+.stepper .st h4 { margin: 0 0 0.2rem; font: 500 1.1rem/1.2 var(--serif-display); color: var(--ink); }
+.stepper .st p { margin: 0; font-family: var(--serif-text); color: var(--ink-soft); }
+.qa { display: grid; gap: 0.8rem; margin: 1.8em 0; }
+.qa .q { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 0.9rem 1.1rem; }
+.qa .q .ql { font: 600 10px/1 var(--sans); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.qa .q .a { margin-top: 0.3rem; font-family: var(--serif-text); color: var(--ink-soft); }
+.qa .q.idk .ql { color: var(--muted); }
+
+/* 08 · numbered field-manual cards ------------------------------ */
+.manual { display: grid; gap: 0.8rem; grid-template-columns: 1fr 1fr; margin: 2.3em 0; }
+.manual .m { border: 1px solid var(--line); border-radius: 14px; background: var(--card); padding: 1.1rem; }
+.manual .m .num { font: 500 12px/1 var(--mono); color: var(--accent); }
+.manual .m h4 { margin: 0.4rem 0 0.3rem; font: 500 1.05rem/1.2 var(--serif-display); color: var(--ink); }
+.manual .m p { margin: 0; font-family: var(--serif-text); font-size: 0.95rem; color: var(--ink-soft); }
+@media (max-width: 640px) { .manual { grid-template-columns: 1fr; } }
+
+/* 09 · kanban board --------------------------------------------- */
+.kanban { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.8rem; margin: 2.3em 0; }
+.kanban .kcol { background: var(--paper-2); border: 1px solid var(--line); border-radius: 14px; padding: 0.6rem; }
+.kanban .kcol > .h { display: flex; justify-content: space-between; padding: 0.3rem 0.4rem 0.55rem; font: 600 10.5px/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.kanban .kcard { margin-bottom: 0.5rem; padding: 0.55rem 0.6rem; background: var(--card); border: 1px solid var(--line); border-radius: 10px; font: 500 0.82rem/1.35 var(--sans); color: var(--ink-soft); }
+.kanban .kcard:last-child { margin-bottom: 0; }
+.kanban .kcard .tg { display: block; margin-bottom: 0.35rem; font: 600 9px/1.2 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+@media (max-width: 720px) { .kanban { grid-template-columns: 1fr 1fr; } }
+
+/* 06 · 09 · 10 · diagram label helpers reuse .diagram (declared above) */
+.legend { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.3em 0; }
+.legend .lg { display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.32rem 0.65rem; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font: 500 11px/1 var(--mono); color: var(--ink-soft); }
+.legend .lg i { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }

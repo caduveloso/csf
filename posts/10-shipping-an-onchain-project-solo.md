@@ -19,6 +19,27 @@ tags:
 
 <p class="lead">A real on-chain product is not one thing. It's a constellation: smart contracts, a subgraph to index them, a mint page, a staking flow, snapshot and allowlist tooling, a backend, and — because it should be fun — a game on top. A few years ago that's a team. This experiment was finding out how much of that constellation one person can ship alone when agents carry the repetitive weight.</p>
 
+<div class="figure-block draw bleed">
+<svg class="diagram" viewBox="0 0 760 380" role="img" aria-label="The Regular Punks repo constellation">
+<line data-draw pathLength="1" x1="380" y1="190" x2="560" y2="92" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="380" y1="190" x2="200" y2="92" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="380" y1="190" x2="620" y2="262" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="380" y1="190" x2="150" y2="266" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="380" y1="190" x2="380" y2="334" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="380" y1="190" x2="672" y2="182" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="560" y1="92" x2="620" y2="262" class="d-stroke d-soft"/>
+<line data-draw pathLength="1" x1="560" y1="92" x2="200" y2="92" class="d-stroke d-soft"/>
+<g><rect x="312" y="170" width="136" height="40" rx="11" class="d-stroke d-accent d-fill-card"/><text class="d-label" x="380" y="195" text-anchor="middle">Contracts</text></g>
+<g><rect x="496" y="73" width="128" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="560" y="97" text-anchor="middle">Subgraph</text></g>
+<g><rect x="138" y="73" width="124" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="200" y="97" text-anchor="middle">Backend</text></g>
+<g><rect x="556" y="243" width="128" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="620" y="267" text-anchor="middle">Mint page</text></g>
+<g><rect x="86" y="247" width="128" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="150" y="271" text-anchor="middle">Snapshot</text></g>
+<g><rect x="318" y="315" width="124" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="380" y="339" text-anchor="middle">Staking</text></g>
+<g><rect x="612" y="163" width="112" height="38" rx="11" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="668" y="187" text-anchor="middle">Game</text></g>
+</svg>
+<div class="legend"><span class="lg"><i style="background:#9e4b43"></i>Contracts · the on-chain truth</span><span class="lg"><i style="background:#54667a"></i>Subgraph · The Graph</span><span class="lg"><i style="background:#2f6e63"></i>Frontend · Next.js</span><span class="lg"><i style="background:#b5832e"></i>Game</span></div>
+</div>
+
 ## The hidden tax of web3 is breadth
 
 The hard part of a project like this was never any single component. Each piece — an ERC contract, a subgraph mapping, a mint button — is individually tractable. The tax is **breadth**: the sheer number of distinct, specialised surfaces that all have to agree with each other.

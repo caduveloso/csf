@@ -19,6 +19,16 @@ tags:
 
 <p class="lead">Every few months someone needs the same thing: a chatbot that knows <em>their</em> material — a company's docs, a course, a body of regulations — and answers from it without making things up. I've built this enough times to stop building it from scratch. This is the reusable shape, and the parts that actually decide whether it works.</p>
 
+<div class="stepper">
+<div class="st"><span class="dot">1</span><h4>Retrieve</h4><p>Find the few passages that actually bear on the question — never the whole corpus.</p></div>
+<div class="st"><span class="dot">2</span><h4>Ground</h4><p>Put those passages into the prompt as the <em>only</em> permitted source of truth.</p></div>
+<div class="st"><span class="dot">3</span><h4>Answer — or abstain</h4><p>Respond from the passages and cite them, or say plainly that the material doesn't cover it.</p></div>
+</div>
+<div class="qa">
+<div class="q"><span class="ql">Grounded</span><div class="a">“What's the deadline for the grant?” → <strong>“15 March, per §4 of the notice.”</strong></div></div>
+<div class="q idk"><span class="ql">Not in the material</span><div class="a">“Will it be extended next year?” → <strong>“That isn't in the documents I have.”</strong></div></div>
+</div>
+
 ## The model is the easy part
 
 The instinct is that a knowledge bot is about the language model. It mostly isn't. A capable model is a commodity you call over an API. What separates a bot that's genuinely useful from one that confidently lies is everything *around* the model: how you store the knowledge, how you find the right slice of it, and how you force the answer to stay grounded in that slice.

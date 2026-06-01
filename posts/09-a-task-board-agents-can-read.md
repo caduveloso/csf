@@ -19,6 +19,26 @@ tags:
 
 <p class="lead">When you work with one agent, a chat window is fine. When you work with several, across several projects, chat falls apart fast — it's linear, ephemeral, and only one conversation at a time. What you actually want is the thing teams figured out long ago: a board. Columns, cards, visible state. The twist is building one where the cards can be moved by a human <em>or</em> an agent, and both stay in sync.</p>
 
+<div class="kanban bleed">
+<div class="kcol"><div class="h"><span>To do</span><span>2</span></div><div class="kcard"><span class="tg">design-system</span>Add a skip button to step 2</div><div class="kcard"><span class="tg">audio-to-sheet</span>Quantise: handle triplets</div></div>
+<div class="kcol"><div class="h"><span>Doing</span><span>1</span></div><div class="kcard"><span class="tg">agent · claude</span>Pin Node to 22 across the fleet</div></div>
+<div class="kcol"><div class="h"><span>Review</span><span>1</span></div><div class="kcard"><span class="tg">mink-cli</span>Live status must not cache</div></div>
+<div class="kcol"><div class="h"><span>Done</span><span>2</span></div><div class="kcard"><span class="tg">prosperity</span>Bump deps · tests green</div><div class="kcard"><span class="tg">md-render</span>Ship prose tokens</div></div>
+</div>
+<div class="figure-block draw">
+<svg class="diagram" viewBox="0 0 760 92" role="img" aria-label="State machine: todo to doing to review to done">
+<defs><marker id="sm" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" class="d-stroke d-accent" fill="none"/></marker></defs>
+<g><rect x="6" y="28" width="150" height="40" rx="10" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="81" y="53" text-anchor="middle">todo</text></g>
+<g><rect x="208" y="28" width="150" height="40" rx="10" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="283" y="53" text-anchor="middle">doing</text></g>
+<g><rect x="410" y="28" width="150" height="40" rx="10" class="d-stroke d-soft d-fill-card"/><text class="d-label" x="485" y="53" text-anchor="middle">review</text></g>
+<g><rect x="612" y="28" width="142" height="40" rx="10" class="d-stroke d-accent d-fill-card"/><text class="d-label" x="683" y="53" text-anchor="middle">done</text></g>
+<line data-draw pathLength="1" x1="156" y1="48" x2="206" y2="48" class="d-stroke d-accent" marker-end="url(#sm)"/>
+<line data-draw pathLength="1" x1="358" y1="48" x2="408" y2="48" class="d-stroke d-accent" marker-end="url(#sm)"/>
+<line data-draw pathLength="1" x1="560" y1="48" x2="610" y2="48" class="d-stroke d-accent" marker-end="url(#sm)"/>
+</svg>
+<div class="caption">Legal transitions only — you can't skip review, and every move is logged.</div>
+</div>
+
 ## Chat is the wrong interface for many agents
 
 A conversation is a single thread of attention. That's great for one focused exchange and terrible for coordinating parallel work. You can't see five agents' progress at a glance in a chat log. You can't tell what's blocked. You scroll, you lose the thread, you re-ask "where are we?" The interface fights the shape of the work.

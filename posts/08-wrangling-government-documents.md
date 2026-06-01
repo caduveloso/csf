@@ -19,6 +19,17 @@ tags:
 
 <p class="lead">The demos always use clean data. Reality hands you a government portal from 2011, PDFs that are really photographs of paper, forms where the same field is spelled three different ways, and downloads that fail one time in five. A lot of my work touches <strong>SALIC</strong> — Brazil's cultural-incentive system — and that world is the perfect teacher for what document intelligence actually requires.</p>
 
+<div class="compare">
+<div class="col bad"><span class="tag">What arrives</span><p>A portal from 2011. PDFs that are photographs of paper. The same field spelled three ways. Downloads that fail one time in five.</p></div>
+<div class="col good"><span class="tag">What ships</span><p>One normalised Markdown representation per document — uniform, structured, and ready for the model to read.</p></div>
+</div>
+<div class="manual">
+<div class="m"><span class="num">01</span><h4>Acquire</h4><p>Retry, resume, and detect error pages dressed as PDFs. Assume every external step will fail.</p></div>
+<div class="m"><span class="num">02</span><h4>Normalise</h4><p>Flatten real-text PDFs and scans alike to one clean format. Quarantine the mess here.</p></div>
+<div class="m"><span class="num">03</span><h4>Extract</h4><p>Model plus an explicit schema: flexibility where parsers shatter, discipline where models drift.</p></div>
+<div class="m"><span class="num">04</span><h4>Review</h4><p>Surface low-confidence fields. The output is a draft that routes a human's attention.</p></div>
+</div>
+
 ## The shape of real-world data
 
 Here's the gap between the brochure and the building. In the brochure, "process the documents" is one step. In the building it's a gauntlet:
